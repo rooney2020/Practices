@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Practices</string>
+    <string name="blank"> </string>
+    <string name="more">...</string>
+    <string name="input_clear">C</string>
+    <string name="input_mod">%</string>
+    <string name="input_delete">D</string>
+    <string name="input_divide">÷</string>
+    <string name="input_plus">+</string>
+    <string name="input_minus">-</string>
+    <string name="input_times">×</string>
+    <string name="input_point">.</string>
+    <string name="input_equal">=</string>
+    <string name="input_1">1</string>
+    <string name="input_2">2</string>
+    <string name="input_3">3</string>
+    <string name="input_4">4</string>
+    <string name="input_5">5</string>
+    <string name="input_6">6</string>
+    <string name="input_7">7</string>
+    <string name="input_8">8</string>
+    <string name="input_9">9</string>
+    <string name="input_0">0</string>
+    <string name="input_00">00</string>
+</resources>
