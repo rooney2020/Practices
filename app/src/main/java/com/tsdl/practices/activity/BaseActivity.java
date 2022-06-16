@@ -7,7 +7,7 @@ import com.tsdl.practices.util.LogUtils;
 
 public class BaseActivity extends Activity {
 
-    private final String TAG = BaseActivity.this.getClass().getName();
+    public final String TAG = BaseActivity.this.getClass().getName();
 
     @Override
     protected void onResume() {

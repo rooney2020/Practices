@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Practices</string>
     <string name="blank"> </string>
-    <string name="more">...</string>
+    <string name="more">···</string>
     <string name="input_clear">C</string>
-    <string name="input_mod">%</string>
+    <string name="input_percent">%</string>
     <string name="input_delete">D</string>
     <string name="input_divide">÷</string>
     <string name="input_plus">+</string>

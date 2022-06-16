@@ -9,6 +9,8 @@ import androidx.databinding.DataBindingUtil;
 
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.ActivityCalculatorBinding;
+import com.tsdl.practices.exception.CalculateException;
+import com.tsdl.practices.model.Calculator;
 import com.tsdl.practices.util.Constants;
 
 public class CalculatorActivity extends BaseActivity implements View.OnClickListener {
@@ -42,7 +44,8 @@ public class CalculatorActivity extends BaseActivity implements View.OnClickList
         binding.btnInputDivide.setOnClickListener(this);
         binding.btnInputDelete.setOnClickListener(this);
         binding.btnInputClear.setOnClickListener(this);
-        binding.btnInputMod.setOnClickListener(this);
+        binding.btnInputPercent.setOnClickListener(this);
+        binding.btnInputEqual.setOnClickListener(this);
     }
 
     @SuppressLint("SetTextI18n")
@@ -51,6 +54,7 @@ public class CalculatorActivity extends BaseActivity implements View.OnClickList
         if (view instanceof Button) {
             String displayString = binding.tvDisplay.getText().toString();
             String keyValue = ((Button) view).getText().toString();
+            String lastKey = Constants.STRING_EMPTY;
             toast(keyValue);
             if (Constants.KEY_VALUE_CLEAR.equals(keyValue)) {
                 binding.tvDisplay.setText(Constants.STRING_EMPTY);
@@ -66,16 +70,43 @@ public class CalculatorActivity extends BaseActivity implements View.OnClickList
                 return;
             }
             if (Constants.KEY_VALUE_EQUAL.equals(keyValue)) {
+                binding.tvResult.setText(calculate(displayString));
                 return;
+            }
+            if (displayString.length() > 0) {
+                lastKey = String.valueOf(displayString.charAt(displayString.length() - 1));
+            }
+            if (Constants.CHARACTERS.contains(keyValue)) {
+                if (displayString.length() > 0 && keyValue.equals(lastKey)) {
+                    return;
+                }
+                if (displayString.length() > 0 && Constants.KEY_VALUE_MINUS.equals(keyValue)
+                        && (Constants.KEY_VALUE_TIMES.equals(lastKey) || Constants.KEY_VALUE_DIVIDE.equals(lastKey))) {
+                    binding.tvDisplay.setText(displayString + keyValue);
+                    return;
+                }
+                if (displayString.length() > 0 && Constants.CHARACTERS.contains(lastKey)
+                        && !Constants.KEY_VALUE_POINT.equals(lastKey) && !Constants.KEY_VALUE_PERCENT.equals(lastKey)) {
+                    binding.tvDisplay.setText(displayString.substring(0, displayString.length() - 1) + keyValue);
+                    return;
+                }
+                if (displayString.length() == 0 && !Constants.KEY_VALUE_MINUS.equals(keyValue)
+                        && !Constants.KEY_VALUE_POINT.equals(keyValue)) {
+                    return;
+                }
             }
             binding.tvDisplay.setText(displayString + keyValue);
         }
     }
 
-    public double calculate(String express) {
-        express = "(5+3*(1+2))^2+0.5+1/2+(-10*3)";
-        int leftBracketsNum = 0;
-
-        return 0;
+    public String calculate(String express) {
+        try {
+            Calculator calculator = new Calculator(express);
+            return calculator.calculate();
+        } catch (CalculateException calculateException) {
+            calculateException.printStackTrace();
+            binding.tvResult.setText(Constants.DISPLAY_ERROR);
+        }
+        return Constants.DISPLAY_ERROR;
     }
 }
