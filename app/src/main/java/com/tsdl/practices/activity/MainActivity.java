@@ -30,8 +30,8 @@ public class MainActivity extends BaseActivity {
 
     private static final DemoDetail[] DEMOS = {
             new DemoDetail(R.string.app_name, R.string.blank, null),
-            new DemoDetail(R.string.app_name, R.string.blank, CalculatorActivity.class),
-            new DemoDetail(R.string.app_name, R.string.blank, CalculatorActivity.class),
-            new DemoDetail(R.string.app_name, R.string.blank, CalculatorActivity.class),
+            new DemoDetail(R.string.activity_calculator, R.string.blank, CalculatorActivity.class),
+            new DemoDetail(R.string.activity_kotlin, R.string.blank, KotlinActivity.class),
+            new DemoDetail(R.string.activity_game, R.string.blank, GameActivity.class),
     };
 }

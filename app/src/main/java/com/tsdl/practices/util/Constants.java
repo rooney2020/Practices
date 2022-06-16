@@ -1,6 +1,5 @@
 package com.tsdl.practices.util;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,4 +27,6 @@ public class Constants {
     public static final List<String> CHARACTERS = Arrays.asList(".", "%", "×", "÷", "+", "-");
     public static final List<String> CHARACTERS_SPLIT = Arrays.asList("×", "÷", "+");
     public static final List<String> CHARACTERS_HIGH_PRIOR = Arrays.asList("×", "÷");
+
+    public static final int CARD_NUM = 4;
 }

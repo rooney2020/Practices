@@ -1,0 +1,585 @@
+diff --git a/app/src/main/java/com/tsdl/practices/activity/GameActivity.java b/app/src/main/java/com/tsdl/practices/activity/GameActivity.java
+new file mode 100644
+index 0000000..cd30226
+--- /dev/null
++++ b/app/src/main/java/com/tsdl/practices/activity/GameActivity.java
+@@ -0,0 +1,14 @@
++package com.tsdl.practices.activity;
++
++import android.os.Bundle;
++
++import com.tsdl.practices.R;
++
++public class GameActivity extends BaseActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_game);
++    }
++}
+\ No newline at end of file
+diff --git a/app/src/main/java/com/tsdl/practices/activity/KotlinActivity.kt b/app/src/main/java/com/tsdl/practices/activity/KotlinActivity.kt
+new file mode 100644
+index 0000000..baa6258
+--- /dev/null
++++ b/app/src/main/java/com/tsdl/practices/activity/KotlinActivity.kt
+@@ -0,0 +1,41 @@
++package com.tsdl.practices.activity
++
++import android.os.Bundle
++import androidx.databinding.DataBindingUtil
++import com.tsdl.practices.R
++import com.tsdl.practices.databinding.ActivityKotlinBinding
++import com.tsdl.practices.model.KotlinData
++import com.tsdl.practices.model.KotlinSingleton
++import com.tsdl.practices.util.LogUtils
++
++class KotlinActivity : BaseActivity() {
++
++    private lateinit var binding : ActivityKotlinBinding
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        binding = DataBindingUtil.setContentView(this, R.layout.activity_kotlin)
++        binding.btnTest.setOnClickListener {
++            toast(KotlinData("brand", 10.0).toString())
++            KotlinSingleton.singletonTest()
++            val list = mutableListOf("list1", "list02", "list003")
++            list.add("l4")
++//            toast(list.toString())
++//            toast(list.maxByOrNull { it.length })
++//            toast(list.map { it.toUpperCase() }.toString())
++//            toast(list.map { it.toUpperCase() }.toString())
++//            toast(list.filter { it.length < 5 }.toString())
++//            toast(list.filter { it.length < 5 }.map { it.toUpperCase() }.toString())
++//            toast(list.any { it.length < 5 }.toString())
++//            toast(list.all { it.length < 5 }.toString())
++            val map = mutableMapOf("1" to "one", "2" to "two")
++            map["3"] = "three"
++//            toast(map.toString())
++            log(1)
++        }
++    }
++
++    private fun log(num : Int, name : String = "hello") {
++        LogUtils.logD(TAG, "num is $num, name is $name")
++    }
++}
+\ No newline at end of file
+diff --git a/app/src/main/java/com/tsdl/practices/activity/MainActivity.java b/app/src/main/java/com/tsdl/practices/activity/MainActivity.java
+index 96788ce..e80fbc8 100644
+--- a/app/src/main/java/com/tsdl/practices/activity/MainActivity.java
++++ b/app/src/main/java/com/tsdl/practices/activity/MainActivity.java
+@@ -30,8 +30,8 @@ public class MainActivity extends BaseActivity {
+ 
+     private static final DemoDetail[] DEMOS = {
+             new DemoDetail(R.string.app_name, R.string.blank, null),
+-            new DemoDetail(R.string.app_name, R.string.blank, CalculatorActivity.class),
+-            new DemoDetail(R.string.app_name, R.string.blank, CalculatorActivity.class),
+-            new DemoDetail(R.string.app_name, R.string.blank, CalculatorActivity.class),
++            new DemoDetail(R.string.activity_calculator, R.string.blank, CalculatorActivity.class),
++            new DemoDetail(R.string.activity_kotlin, R.string.blank, KotlinActivity.class),
++            new DemoDetail(R.string.activity_game, R.string.blank, GameActivity.class),
+     };
+ }
+\ No newline at end of file
+diff --git a/app/src/main/java/com/tsdl/practices/adapter/ContentAdapter.java b/app/src/main/java/com/tsdl/practices/adapter/ContentAdapter.java
+index a019881..4b7fb15 100644
+--- a/app/src/main/java/com/tsdl/practices/adapter/ContentAdapter.java
++++ b/app/src/main/java/com/tsdl/practices/adapter/ContentAdapter.java
+@@ -3,6 +3,7 @@ package com.tsdl.practices.adapter;
+ import android.annotation.SuppressLint;
+ import android.content.Context;
+ import android.content.Intent;
++import android.content.res.Resources;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+@@ -51,8 +52,10 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentV
+         if (binding != null) {
+             if (demoDetail.getActivityClass() == null) {
+                 binding.tvItemName.setText(demoDetail.getTitleId());
++                binding.tvItemName.setTextSize(24);
+             } else {
+-                binding.tvItemName.setText(Constants.STRING_BLANK + demoDetail.getTitleId());
++                binding.tvItemName.setText(Constants.STRING_BLANK
++                        + mContext.getResources().getText(demoDetail.getTitleId()));
+             }
+         }
+ 
+diff --git a/app/src/main/java/com/tsdl/practices/model/KotlinData.kt b/app/src/main/java/com/tsdl/practices/model/KotlinData.kt
+new file mode 100644
+index 0000000..22c9019
+--- /dev/null
++++ b/app/src/main/java/com/tsdl/practices/model/KotlinData.kt
+@@ -0,0 +1,3 @@
++package com.tsdl.practices.model
++
++data class KotlinData(val brand: String, val price: Double)
+diff --git a/app/src/main/java/com/tsdl/practices/model/KotlinSingleton.kt b/app/src/main/java/com/tsdl/practices/model/KotlinSingleton.kt
+new file mode 100644
+index 0000000..8f519da
+--- /dev/null
++++ b/app/src/main/java/com/tsdl/practices/model/KotlinSingleton.kt
+@@ -0,0 +1,9 @@
++package com.tsdl.practices.model
++
++import com.tsdl.practices.util.LogUtils
++
++object KotlinSingleton {
++    fun singletonTest() {
++        LogUtils.logD(KotlinSingleton.javaClass.simpleName, "singletonTest");
++    }
++}
+diff --git a/app/src/main/java/com/tsdl/practices/view/GameView.java b/app/src/main/java/com/tsdl/practices/view/GameView.java
+new file mode 100644
+index 0000000..a6caeec
+--- /dev/null
++++ b/app/src/main/java/com/tsdl/practices/view/GameView.java
+@@ -0,0 +1,325 @@
++package com.tsdl.practices.view;
++
++import android.content.Context;
++import android.util.AttributeSet;
++import android.widget.GridLayout;
++
++public class GameView extends GridLayout {
++//    private final Card[][] cardsMap = new Card[Constants.CARD_NUM][Constants.CARD_NUM];
++//    private final int[][] cardMapNum = new int[Constants.CARD_NUM][Constants.CARD_NUM];
++//    private final List<Point> emptyPoints = new ArrayList<>();
++//    //是否更新一个卡片
++//    boolean flag = false;
++//    static int card_width;
++//    private MediaPlayer mediaPlayer;
++//    private MediaPlayer mediaPlayer2;
++//    private MediaPlayer mediaPlayer3;
++//    private static GameView gameView = null;
++//    private final AnimLayer animLayer = new AnimLayer(this.getContext());
++//
++//    public static GameView getGameView() {
++//        return gameView;
++//    }
++//
++//    public int[][] getCardMapNum() {
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                cardMapNum[x][y] = cardsMap[x][y].getNum();
++//            }
++//        }
++//        return cardMapNum;
++//    }
++
++    public GameView(Context context) {
++        super(context);
++//        gameView = this;
++//        initGameView();
++    }
++
++    public GameView(Context context, AttributeSet attrs) {
++        super(context, attrs);
++//        gameView = this;
++//        initGameView();
++    }
++
++//    public GameView(Context context, AttributeSet attrs, int defStyleAttr) {
++//        super(context, attrs, defStyleAttr);
++//        gameView = this;
++//        initGameView();
++//    }
++//
++//    /**
++//     * 初始化方法
++//     */
++//    private void initGameView() {
++//        setColumnCount(Constants.CARD_NUM);
++//        setBackgroundColor(0xffbbadc0);
++//        card_width = getCardWitch();
++//        addCards(card_width);
++//        mediaPlayer = MediaPlayer.create(getContext(), R.raw.move);
++//        mediaPlayer2 = MediaPlayer.create(getContext(), R.raw.move);
++//        mediaPlayer3 = MediaPlayer.create(getContext(), R.raw.move);
++//
++//        setOnTouchListener(new OnTouchListener() {
++//            //屏幕触动起始位置和偏移量
++//            private float startX;
++//            private float startY;
++//
++//            @Override
++//            public boolean onTouch(View view, MotionEvent motionEvent) {
++//                switch (motionEvent.getAction()) {
++//                    case MotionEvent.ACTION_DOWN:
++//                        startX = motionEvent.getX();
++//                        startY = motionEvent.getY();
++//                        break;
++//                    case MotionEvent.ACTION_UP:
++//                        float offsetX = motionEvent.getX() - startX;
++//                        float offsetY = motionEvent.getY() - startY;
++//
++//                        if (Math.abs(offsetX) > Math.abs(offsetY)) {
++//                            //横向滑动
++//                            if (offsetX < -5) {
++//                                swipeLeft();
++//                            } else if (offsetX > 5) {
++//                                swipeRight();
++//                            }
++//                        } else {
++//                            if (offsetY < -5) {
++//                                swipeUp();
++//                            } else if (offsetY > 5) {
++//                                swipeDown();
++//                            }
++//                        }
++//                        break;
++//                }
++//                return true;
++//            }
++//        });
++//    }
++//
++//    @Override
++//    protected void onSizeChanged(int w, int h, int oldWidth, int oldHeight) {
++//        super.onSizeChanged(w, h, oldWidth, oldHeight);
++//
++//        startGame();
++//    }
++//
++//    private int getCardWitch() {
++//        //声明屏幕对象
++//        DisplayMetrics displayMetrics;
++//        displayMetrics = getResources().getDisplayMetrics();
++//        return (displayMetrics.widthPixels - 10) / Constants.CARD_NUM;
++//    }
++//
++//    //经过下面的方法添加图片后，x代表的就是横坐标，y代表的就是纵坐标
++//    private void addCards(int cardWidth) {
++//        Card card;
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                card = new Card(getContext());
++//                card.setNum(0);
++//                addView(card, cardWidth, cardWidth);
++//                cardsMap[x][y] = card;
++//            }
++//        }
++//    }
++//
++//    public void startGame() {
++//        SharedPreferences preferences = getContext().getSharedPreferences("game2048data", MODE_PRIVATE);
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                int k = preferences.getInt(x + "-" + y, 0);
++//                cardsMap[x][y].setNum(k);
++//            }
++//        }
++//        MainActivity.getMainActivity().clearScore();
++//        int score = preferences.getInt("score", 0);
++//        MainActivity.getMainActivity().addScore(score);
++//    }
++//
++//    public void startNewGame() {
++//        MainActivity.getMainActivity().clearScore();
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                cardsMap[x][y].setNum(0);
++//            }
++//        }
++//        addRandomNum();
++//        addRandomNum();
++//    }
++//
++//    private void addRandomNum() {
++//        emptyPoints.clear();
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                if (cardsMap[x][y].getNum() <= 0) {
++//                    emptyPoints.add(new Point(x, y));
++//                }
++//            }
++//        }
++//
++//        Point point = emptyPoints.remove((int) (Math.random() * emptyPoints.size()));
++//        cardsMap[point.x][point.y].setNum(Math.random() > 0.1 ? 2 : 4);
++//        animLayer.createScaleTo1(cardsMap[point.x][point.y]);
++//    }
++//
++//    private void swipeLeft() {
++//        flag = false;
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                for (int x1 = x + 1; x1 < Constants.CARD_NUM; x1++) {
++//                    if (cardsMap[x1][y].getNum() > 0) {
++//                        if (cardsMap[x][y].getNum() <= 0) {
++//                            cardsMap[x][y].setNum(cardsMap[x1][y].getNum());
++//                            cardsMap[x1][y].setNum(0);
++//                            x--;
++//                            flag = true;
++//                        } else if (cardsMap[x][y].getNum() == cardsMap[x1][y].getNum()) {
++//                            cardsMap[x][y].setNum(cardsMap[x][y].getNum() * 2);
++//                            cardsMap[x1][y].setNum(0);
++//                            MainActivity.getMainActivity().addScore(cardsMap[x][y].getNum());
++//                            flag = true;
++//                        }
++//                        break;
++//                    }
++//                }
++//            }
++//        }
++//        if (flag) {
++//            if (!mediaPlayer.isPlaying()) {
++//                mediaPlayer.start();
++//            } else if (!mediaPlayer2.isPlaying()) {
++//                mediaPlayer2.start();
++//            } else {
++//                mediaPlayer3.start();
++//            }
++//            addRandomNum();
++//            checkComplete();
++//        }
++//    }
++//
++//    private void swipeRight() {
++//        flag = false;
++//        for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 3; x >= 0; x--) {
++//                for (int x1 = x - 1; x1 >= 0; x1--) {
++//                    if (cardsMap[x1][y].getNum() > 0) {
++//                        if (cardsMap[x][y].getNum() <= 0) {
++//                            cardsMap[x][y].setNum(cardsMap[x1][y].getNum());
++//                            cardsMap[x1][y].setNum(0);
++//                            x++;
++//                            flag = true;
++//                        } else if (cardsMap[x][y].getNum() == cardsMap[x1][y].getNum()) {
++//                            cardsMap[x][y].setNum(cardsMap[x][y].getNum() * 2);
++//                            cardsMap[x1][y].setNum(0);
++//                            MainActivity.getMainActivity().addScore(cardsMap[x][y].getNum());
++//                            flag = true;
++//                        }
++//                        break;
++//                    }
++//                }
++//            }
++//        }
++//        if (flag) {
++//            if (!mediaPlayer.isPlaying()) {
++//                mediaPlayer.start();
++//            } else if (!mediaPlayer2.isPlaying()) {
++//                mediaPlayer2.start();
++//            } else {
++//                mediaPlayer3.start();
++//            }
++//            addRandomNum();
++//            checkComplete();
++//        }
++//    }
++//
++//    private void swipeUp() {
++//        flag = false;
++//        for (int x = 0; x < Constants.CARD_NUM; x++) {
++//            for (int y = 0; y < Constants.CARD_NUM; y++) {
++//                for (int y1 = y + 1; y1 < Constants.CARD_NUM; y1++) {
++//                    if (cardsMap[x][y1].getNum() > 0) {
++//                        if (cardsMap[x][y].getNum() <= 0) {
++//                            cardsMap[x][y].setNum(cardsMap[x][y1].getNum());
++//                            cardsMap[x][y1].setNum(0);
++//                            y--;
++//                            flag = true;
++//                        } else if (cardsMap[x][y].getNum() == cardsMap[x][y1].getNum()) {
++//                            cardsMap[x][y].setNum(cardsMap[x][y].getNum() * 2);
++//                            cardsMap[x][y1].setNum(0);
++//                            MainActivity.getMainActivity().addScore(cardsMap[x][y].getNum());
++//                            flag = true;
++//                        }
++//                        break;
++//                    }
++//                }
++//            }
++//        }
++//        if (flag) {
++//            if (!mediaPlayer.isPlaying()) {
++//                mediaPlayer.start();
++//            } else if (!mediaPlayer2.isPlaying()) {
++//                mediaPlayer2.start();
++//            } else {
++//                mediaPlayer3.start();
++//            }
++//            addRandomNum();
++//            checkComplete();
++//        }
++//    }
++//
++//    private void swipeDown() {
++//        flag = false;
++//        for (int x = 0; x < Constants.CARD_NUM; x++) {
++//            for (int y = 3; y >= 0; y--) {
++//                for (int y1 = y - 1; y1 >= 0; y1--) {
++//                    if (cardsMap[x][y1].getNum() > 0) {
++//                        if (cardsMap[x][y].getNum() <= 0) {
++//                            cardsMap[x][y].setNum(cardsMap[x][y1].getNum());
++//                            cardsMap[x][y1].setNum(0);
++//                            y++;
++//                            flag = true;
++//                        } else if (cardsMap[x][y].getNum() == cardsMap[x][y1].getNum()) {
++//                            cardsMap[x][y].setNum(cardsMap[x][y].getNum() * 2);
++//                            cardsMap[x][y1].setNum(0);
++//                            MainActivity.getMainActivity().addScore(cardsMap[x][y].getNum());
++//                            flag = true;
++//                        }
++//                        break;
++//                    }
++//                }
++//            }
++//        }
++//        if (flag) {
++//            if (!mediaPlayer.isPlaying()) {
++//                mediaPlayer.start();
++//            } else if (!mediaPlayer2.isPlaying()) {
++//                mediaPlayer2.start();
++//            } else {
++//                mediaPlayer3.start();
++//            }
++//            addRandomNum();
++//            checkComplete();
++//        }
++//    }
++//
++//    private void checkComplete() {
++//        boolean complete = true;
++//        ALL:
++//            for (int y = 0; y < Constants.CARD_NUM; y++) {
++//            for (int x = 0; x < Constants.CARD_NUM; x++) {
++//                if (cardsMap[x][y].getNum() == 0 || (x > 0 && cardsMap[x][y].getNum() == cardsMap[x - 1][y].getNum())
++//                        || (x < 3 && cardsMap[x][y].getNum() == cardsMap[x + 1][y].getNum())
++//                        || (y > 0 && cardsMap[x][y].getNum() == cardsMap[x][y - 1].getNum())
++//                        || (y < 3 && cardsMap[x][y].getNum() == cardsMap[x][y + 1].getNum())) {
++//                    complete = false;
++//                    break ALL;
++//                }
++//            }
++//        }
++//        if (complete) {
++//            new AlertDialog.Builder(getContext()).setTitle("你好").setMessage("游戏结束")
++//                    .setPositiveButton("重来", (dialogInterface, i) -> startNewGame()).show();
++//        }
++//    }
++}
+diff --git a/app/src/main/res/layout/activity_game.xml b/app/src/main/res/layout/activity_game.xml
+new file mode 100644
+index 0000000..5049aa9
+--- /dev/null
++++ b/app/src/main/res/layout/activity_game.xml
+@@ -0,0 +1,40 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".activity.GameActivity">
++
++    <Button
++        android:id="@+id/btn_start"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="@string/game_start"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <Button
++        android:id="@+id/btn_pause"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="@string/game_pause"
++        app:layout_constraintStart_toEndOf="@id/btn_start"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <Button
++        android:id="@+id/btn_restart"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="@string/game_restart"
++        app:layout_constraintStart_toEndOf="@id/btn_pause"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <com.tsdl.practices.view.GameView
++        android:layout_width="0dp"
++        android:layout_height="0dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@id/btn_start" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+diff --git a/app/src/main/res/layout/activity_kotlin.xml b/app/src/main/res/layout/activity_kotlin.xml
+new file mode 100644
+index 0000000..c63cd57
+--- /dev/null
++++ b/app/src/main/res/layout/activity_kotlin.xml
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="utf-8"?>
++<layout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools">
++
++    <data>
++
++    </data>
++
++    <androidx.constraintlayout.widget.ConstraintLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        tools:context=".activity.KotlinActivity">
++
++        <Button
++            android:id="@+id/btn_test"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="@string/input_times"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent" />
++    </androidx.constraintlayout.widget.ConstraintLayout>
++</layout>
+\ No newline at end of file
+diff --git a/app/src/main/res/layout/item_content_list.xml b/app/src/main/res/layout/item_content_list.xml
+index 7c4dde9..63b371f 100644
+--- a/app/src/main/res/layout/item_content_list.xml
++++ b/app/src/main/res/layout/item_content_list.xml
+@@ -14,6 +14,8 @@
+             android:id="@+id/tv_item_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
++            android:padding="5dp"
++            android:textSize="18sp"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent" />
+ 
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+index 8267995..91e4d44 100644
+--- a/app/src/main/res/values/strings.xml
++++ b/app/src/main/res/values/strings.xml
+@@ -22,4 +22,12 @@
+     <string name="input_9">9</string>
+     <string name="input_0">0</string>
+     <string name="input_00">00</string>
++
++    <string name="activity_calculator">Calculator</string>
++    <string name="activity_kotlin">Kotlin</string>
++    <string name="activity_game">Game</string>
++
++    <string name="game_start">Start</string>
++    <string name="game_restart">Restart</string>
++    <string name="game_pause">Pause</string>
+ </resources>
+\ No newline at end of file
+diff --git a/build.gradle b/build.gradle
+index b0e1af8..1664f0f 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -2,6 +2,7 @@
+ plugins {
+     id 'com.android.application' version '7.1.1' apply false
+     id 'com.android.library' version '7.1.1' apply false
++    id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+ }
+ 
+ task clean(type: Delete) {

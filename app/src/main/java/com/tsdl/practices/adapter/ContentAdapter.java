@@ -3,6 +3,7 @@ package com.tsdl.practices.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,8 +52,10 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentV
         if (binding != null) {
             if (demoDetail.getActivityClass() == null) {
                 binding.tvItemName.setText(demoDetail.getTitleId());
+                binding.tvItemName.setTextSize(24);
             } else {
-                binding.tvItemName.setText(Constants.STRING_BLANK + demoDetail.getTitleId());
+                binding.tvItemName.setText(Constants.STRING_BLANK
+                        + mContext.getResources().getText(demoDetail.getTitleId()));
             }
         }
 

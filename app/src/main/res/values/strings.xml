@@ -22,4 +22,12 @@
     <string name="input_9">9</string>
     <string name="input_0">0</string>
     <string name="input_00">00</string>
+
+    <string name="activity_calculator">Calculator</string>
+    <string name="activity_kotlin">Kotlin</string>
+    <string name="activity_game">Game</string>
+
+    <string name="game_start">Start</string>
+    <string name="game_restart">Restart</string>
+    <string name="game_pause">Pause</string>
 </resources>
