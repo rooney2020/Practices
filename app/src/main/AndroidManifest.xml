@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+        android:name="ScopedStorage"
+        android:value="true" />
         <activity
             android:name=".activity.GameActivity"
             android:exported="false" />

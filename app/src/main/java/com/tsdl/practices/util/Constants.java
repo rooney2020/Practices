@@ -28,5 +28,9 @@ public class Constants {
     public static final List<String> CHARACTERS_SPLIT = Arrays.asList("×", "÷", "+");
     public static final List<String> CHARACTERS_HIGH_PRIOR = Arrays.asList("×", "÷");
 
+    public static final String SP_NAME = "game2048data";
+    public static final String SP_KEY_SEPARATOR = "-";
+    public static final String SP_KEY_SCORE = "score";
     public static final int CARD_NUM = 4;
+    public static final int GAME_VIEW_COLOR = 0xffbbadc0;
 }
