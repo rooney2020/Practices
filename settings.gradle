@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Practices"
 include ':app'
+include ':service'
+include ':common_lib'

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tsdl.practices">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <service android:name=".service.MusicService" />
+
+        <activity
+            android:name=".activity.MusicActivity"
+            android:exported="false" />
+
         <meta-data
-        android:name="ScopedStorage"
-        android:value="true" />
+            android:name="ScopedStorage"
+            android:value="true" />
+
         <activity
             android:name=".activity.GameActivity"
             android:exported="false" />

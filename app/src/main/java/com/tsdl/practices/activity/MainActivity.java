@@ -33,5 +33,6 @@ public class MainActivity extends BaseActivity {
             new DemoDetail(R.string.activity_calculator, R.string.blank, CalculatorActivity.class),
             new DemoDetail(R.string.activity_kotlin, R.string.blank, KotlinActivity.class),
             new DemoDetail(R.string.activity_game, R.string.blank, GameActivity.class),
+            new DemoDetail(R.string.activity_music, R.string.blank, MusicActivity.class),
     };
 }

@@ -4,23 +4,35 @@ import android.util.Log;
 
 public class LogUtils {
 
+    private static boolean debugFlag = true;
+
     public static void logI(String tag, String msg) {
-        Log.i(tag, msg);
+        if (debugFlag) {
+            Log.i(tag, msg);
+        }
     }
 
     public static void logD(String tag, String msg) {
-        Log.d(tag, msg);
+        if (debugFlag) {
+            Log.d(tag, msg);
+        }
     }
 
     public static void logE(String tag, String msg) {
-        Log.e(tag, msg);
+        if (debugFlag) {
+            Log.e(tag, msg);
+        }
     }
 
     public static void logV(String tag, String msg) {
-        Log.v(tag, msg);
+        if (debugFlag) {
+            Log.v(tag, msg);
+        }
     }
 
     public static void logW(String tag, String msg) {
-        Log.w(tag, msg);
+        if (debugFlag) {
+            Log.w(tag, msg);
+        }
     }
 }

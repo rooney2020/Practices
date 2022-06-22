@@ -26,8 +26,14 @@
     <string name="activity_calculator">Calculator</string>
     <string name="activity_kotlin">Kotlin</string>
     <string name="activity_game">Game</string>
+    <string name="activity_music">Music</string>
 
     <string name="game_start">Start</string>
     <string name="game_restart">Restart</string>
     <string name="game_pause">Pause</string>
+
+    <string name="start_service">start service</string>
+    <string name="stop_service">stop service</string>
+    <string name="bind_service">bind service</string>
+    <string name="unbind_service">unbind service</string>
 </resources>
