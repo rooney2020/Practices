@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.PixelFormat;
-import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Gravity;
@@ -15,7 +14,6 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 
 import com.tsdl.practices.R;
 
@@ -36,7 +34,6 @@ public class DialogBase extends Dialog {
         mDialogType = dialogType;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressLint("ResourceType")
     @Override
     public void show() {
@@ -47,7 +44,6 @@ public class DialogBase extends Dialog {
         super.show();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     protected void initDialogInner() {
         setCanceledOnTouchOutside(false);
         setCancelable(false);
@@ -62,7 +58,6 @@ public class DialogBase extends Dialog {
         dialogWindow.setBackgroundDrawableResource(android.R.color.transparent);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void switchDialogType(int dialogType) {
         if (mDialogType == dialogType) {
             return;
@@ -109,7 +104,6 @@ public class DialogBase extends Dialog {
         });
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public WindowManager.LayoutParams getDialogParams(WindowManager.LayoutParams params) {
         // params.type = WindowManager.LayoutParams.TYPE_SYSTEM_DIALOG;
         // emulator use below type

@@ -2,13 +2,10 @@ package com.tsdl.practices.popup;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import androidx.annotation.RequiresApi;
 
 import com.tsdl.practices.R;
 import com.tsdl.practices.enums.SkinMode;
@@ -26,7 +23,6 @@ public class CustomDialog extends DialogBase implements SkinManager.OnSkinModeCh
     private int mBgDay;
     private int mBgNight;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public CustomDialog(Context context, int dialogType) {
         super(context, dialogType);
         initBackground();
@@ -34,7 +30,6 @@ public class CustomDialog extends DialogBase implements SkinManager.OnSkinModeCh
         initView();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public CustomDialog(Context context, int dialogType, String title, String content) {
         this(context, dialogType);
         setTitle(title);
@@ -47,7 +42,6 @@ public class CustomDialog extends DialogBase implements SkinManager.OnSkinModeCh
     }
 
     @SuppressLint("InflateParams")
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private void initDialog(Context context) {
         mView = LayoutInflater.from(context).inflate(R.layout.custom_dialog, null);
         setContentView(mView);

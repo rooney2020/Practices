@@ -1,11 +1,9 @@
 package com.tsdl.practices.activity;
 
 import android.annotation.SuppressLint;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.RequiresApi;
 import androidx.databinding.DataBindingUtil;
 
 import com.tsdl.practices.R;
@@ -15,7 +13,6 @@ public class GameActivity extends BaseActivity implements View.OnClickListener {
 
     private ActivityGameBinding binding;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

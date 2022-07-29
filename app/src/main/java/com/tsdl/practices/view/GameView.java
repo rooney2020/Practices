@@ -158,7 +158,6 @@ public class GameView extends GridLayout implements View.OnTouchListener {
         target.startAnimation(sa);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     private void travelBy(BiConsumer<Integer, Integer> function) {
         for (int y = 0; y < Constants.CARD_NUM; y++) {
             for (int x = 0; x < Constants.CARD_NUM; x++) {

@@ -33,24 +33,17 @@ public class MusicService extends Service {
         LogUtils.logD(TAG, "MusicService");
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onCreate() {
         super.onCreate();
         LogUtils.logD(TAG, "onCreate");
         Intent intent = new Intent(this, MusicActivity.class);
         PendingIntent pi;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
-        } else {
-            pi = PendingIntent.getActivity(this, 0, intent, 0);
-        }
+        pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
         String channelId = getPackageName();
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(channelId, channelId, IMPORTANCE_LOW);
-            manager.createNotificationChannel(channel);
-        }
+        NotificationChannel channel = new NotificationChannel(channelId, channelId, IMPORTANCE_LOW);
+        manager.createNotificationChannel(channel);
         Notification notification = new NotificationCompat.Builder(this, channelId)
                 .setContentTitle("Content Title")
                 .setContentText("Content Text")

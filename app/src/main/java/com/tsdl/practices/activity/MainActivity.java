@@ -1,9 +1,7 @@
 package com.tsdl.practices.activity;
 
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.RequiresApi;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -19,7 +17,6 @@ public class MainActivity extends BaseActivity {
     private ActivityMainBinding binding;
     private CustomDialog customDialog;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +24,6 @@ public class MainActivity extends BaseActivity {
         initView();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private void initView() {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         ContentAdapter adapter = new ContentAdapter(this, DEMOS);
@@ -41,24 +37,24 @@ public class MainActivity extends BaseActivity {
             new DemoDetail(R.string.activity_kotlin, R.string.blank, this, KotlinActivity.class),
             new DemoDetail(R.string.activity_game, R.string.blank, this, GameActivity.class),
             new DemoDetail(R.string.activity_music, R.string.blank, this, MusicActivity.class),
+            new DemoDetail(R.string.item_callback, R.string.blank, null),
             new DemoDetail(R.string.btn_skin, R.string.blank, () -> SkinManager.Singleton.getInstance().nextSkinMode()),
-            new DemoDetail(R.string.btn_dialog, R.string.blank, new DemoDetail.Callback() {
-                @RequiresApi(api = Build.VERSION_CODES.O)
-                @Override
-                public void execute() {
-                    if (customDialog != null && customDialog.isShowing()) {
-                        customDialog.show();
-                        return;
-                    }
-                    customDialog = new CustomDialog(MainActivity.this, CustomDialog.DIALOG_TYPE_SYSTEM);
-                    customDialog.setTitle(getString(R.string.toast_title));
-                    customDialog.setMainContent(getString(R.string.toast_content));
-                    customDialog.setOnNegativeClickListener(view -> customDialog.dismiss());
-                    customDialog.setOnTapOutClickListener(view -> customDialog.dismiss());
-                    customDialog.setOnTapOutClickListener(binding.rvContent, view -> customDialog.dismiss());
-                    customDialog.setOnTapOutClickListener(binding.getRoot(), view -> customDialog.dismiss());
-                    customDialog.show();
-                }
-            }),
+            new DemoDetail(R.string.btn_dialog, R.string.blank, this::alertDialog),
     };
+
+    private void alertDialog() {
+        if (customDialog != null && customDialog.isShowing()) {
+            customDialog.show();
+            return;
+        }
+        customDialog = new CustomDialog(MainActivity.this, CustomDialog.DIALOG_TYPE_SYSTEM);
+        customDialog.setTitle(getString(R.string.toast_title));
+        customDialog.setMainContent(getString(R.string.toast_content));
+        customDialog.setOnNegativeClickListener(view -> customDialog.dismiss());
+        customDialog.setOnTapOutClickListener(view -> customDialog.dismiss());
+        customDialog.setOnTapOutClickListener(binding.rvContent, view -> customDialog.dismiss());
+        customDialog.setOnTapOutClickListener(binding.getRoot(), view -> customDialog.dismiss());
+        customDialog.show();
+    }
+
 }

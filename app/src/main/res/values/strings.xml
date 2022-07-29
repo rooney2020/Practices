@@ -27,6 +27,7 @@
     <string name="activity_kotlin">Kotlin</string>
     <string name="activity_game">Game</string>
     <string name="activity_music">Music</string>
+    <string name="item_callback">Callback</string>
 
     <string name="game_start">Start</string>
     <string name="game_restart">Restart</string>
