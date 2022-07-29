@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="small_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_84</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:maxWidth">@dimen/max_width_320px</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/max_lines_1</item>
+    </style>
+
+    <style name="small_tv_no_title_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_102</item>
+        <item name="android:maxWidth">@dimen/max_width_324px</item>
+        <item name="android:textSize">@dimen/text_size_36px</item>
+        <item name="android:maxLines">@integer/max_lines_1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="small_tv_main_content_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_84</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:maxWidth">@dimen/max_width_320px</item>
+        <item name="android:maxLines">@integer/max_lines_2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="small_tv_title_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_146</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:maxLines">@integer/max_lines_1</item>
+        <item name="android:maxWidth">@dimen/max_width_384px</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="small_tv_minor_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_194</item>
+        <item name="android:textSize">@dimen/text_size_24px</item>
+        <item name="android:maxLines">@integer/max_lines_2</item>
+        <item name="android:maxWidth">@dimen/max_width_320px</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="small_btn_ok">
+        <item name="android:layout_width">@dimen/btn_width_208px</item>
+        <item name="android:layout_height">@dimen/btn_height_80px</item>
+        <item name="android:layout_marginStart">@dimen/margin_126</item>
+        <item name="android:layout_marginBottom">@dimen/margin_64</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+    </style>
+
+    <style name="small_btn_cancel">
+        <item name="android:layout_width">@dimen/btn_width_208px</item>
+        <item name="android:layout_height">@dimen/btn_height_80px</item>
+        <item name="android:layout_marginEnd">@dimen/margin_126</item>
+        <item name="android:layout_marginBottom">@dimen/margin_64</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+    </style>
+
+
+    <style name="mid_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_84</item>
+        <item name="android:textSize">@dimen/text_size_36px</item>
+        <item name="android:maxWidth">@dimen/max_width_624px</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="mid_tv_content_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_146</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:maxWidth">@dimen/max_width_624px</item>
+        <item name="android:maxLines">@integer/max_lines_2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="mid_tv_content_one">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_171</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:maxLines">@integer/max_lines_1</item>
+        <item name="android:maxWidth">@dimen/max_width_624px</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="mid_layout_password">
+        <item name="android:layout_width">@dimen/et_width_726px</item>
+        <item name="android:layout_height">@dimen/et_height_90px</item>
+        <item name="android:layout_marginTop">@dimen/margin_166</item>
+        <item name="android:paddingStart">@dimen/margin_50</item>
+        <item name="android:paddingEnd">@dimen/margin_10</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:hint">@string/hint_password</item>
+    </style>
+
+    <style name="mid_et_password">
+        <item name="android:layout_width">@dimen/et_width_676px</item>
+        <item name="android:layout_height">@dimen/et_height_90px</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:hint">@string/hint_password</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="mid_tv_explain_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_263</item>
+        <item name="paddingStart">@dimen/margin_55</item>
+        <item name="android:textSize">@dimen/text_size_28px</item>
+        <item name="android:maxLines">@integer/max_lines_1</item>
+        <item name="android:maxWidth">@dimen/max_width_624px</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="mid_btn_ok">
+        <item name="android:layout_width">@dimen/btn_width_208px</item>
+        <item name="android:layout_height">@dimen/btn_height_80px</item>
+        <item name="android:layout_marginStart">@dimen/margin_128</item>
+        <item name="android:layout_marginBottom">@dimen/margin_64</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+    </style>
+
+    <style name="mid_btn_cancel">
+        <item name="android:layout_width">@dimen/btn_width_208px</item>
+        <item name="android:layout_height">@dimen/btn_height_80px</item>
+        <item name="android:layout_marginEnd">@dimen/margin_128</item>
+        <item name="android:layout_marginBottom">@dimen/margin_64</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+    </style>
+
+    <style name="iv_progress">
+        <item name="android:layout_width">@dimen/img_width_100px</item>
+        <item name="android:layout_height">@dimen/img_width_100px</item>
+        <item name="android:layout_marginTop">@dimen/margin_148</item>
+    </style>
+
+    <style name="mid_progress_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_308</item>
+        <item name="android:maxLines">@integer/max_lines_1</item>
+    </style>
+
+    <style name="big_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_82</item>
+        <item name="android:textSize">@dimen/text_size_36px</item>
+    </style>
+
+    <style name="tv_main_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_148</item>
+        <item name="android:maxWidth">@dimen/text_width_691px</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+        <item name="android:maxLines">@integer/max_lines_7</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="big_btn_ok">
+        <item name="android:layout_width">@dimen/btn_width_260px</item>
+        <item name="android:layout_height">@dimen/btn_height_80px</item>
+        <item name="android:layout_marginStart">@dimen/margin_131</item>
+        <item name="android:layout_marginBottom">@dimen/margin_62</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+    </style>
+
+    <style name="big_btn_cancel">
+        <item name="android:layout_width">@dimen/btn_width_260px</item>
+        <item name="android:layout_height">@dimen/btn_height_80px</item>
+        <item name="android:layout_marginEnd">@dimen/margin_131</item>
+        <item name="android:layout_marginBottom">@dimen/margin_62</item>
+        <item name="android:textSize">@dimen/text_size_32px</item>
+    </style>
+
+    <style name="TmecButton" parent="android:Widget.Button">
+        <item name="android:height">@dimen/tmec_button_height</item>
+        <item name="android:minWidth">@dimen/tmec_button_minWidth</item>
+        <item name="android:textSize">@dimen/tmec_button_text_size</item>
+    </style>
+
+    <style name="TmecButtonIcon" parent="android:Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/tmec_button_icon_min_width</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="TextAppearance.TSToast" parent="android:TextAppearance">
+        <item name="android:textColor">@color/toast_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAllCaps">@bool/toast_textappearance_all_caps</item>
+        <item name="android:textSize">@dimen/toast_size</item>
+    </style>
+
+    <style name="DefaultToastLl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DefaultToastIv">
+        <item name="android:layout_width">@dimen/toast_image_width_64px</item>
+        <item name="android:layout_height">@dimen/toast_image_height_64px</item>
+    </style>
+
+    <style name="DefaultToastTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/toast_text_size_36px</item>
+    </style>
+
+    <style name="TmecSwitch" parent="android:Widget.Material.CompoundButton.Switch">
+        <item name="android:track">@null</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:showText">false</item>
+    </style>
+
+    <style name="TmecTextTitleWeight">
+        <item name="android:textFontWeight">500</item>
+    </style>
+
+    <style name="progressBar" parent="android:Widget.Material.Light.ProgressBar.Horizontal">
+        <item name="maxHeight">100dp</item>
+        <item name="minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_night_bg</item>
+    </style>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_song_number_margin_left">36px</dimen>
+    <dimen name="item_song_name_margin_left">18px</dimen>
+    <dimen name="item_song_score_margin_left">21px</dimen>
+    <dimen name="item_song_score_layout_height">44px</dimen>
+    <dimen name="item_song_singer_margin_left">11px</dimen>
+    <dimen name="item_song_left_icon_margin_right">60px</dimen>
+    <dimen name="item_song_right_icon_margin_right">22px</dimen>
+    <dimen name="item_song_bottom_line_margin_left">30px</dimen>
+    <dimen name="item_song_bottom_line_margin_right">18px</dimen>
+    <dimen name="item_song_bottom_line_height">2px</dimen>
+    <dimen name="item_song_icon_size">64px</dimen>
+    <dimen name="item_song_width">1100px</dimen>
+    <dimen name="item_song_height">110px</dimen>
+
+    <dimen name="item_song_score_text_size">24sp</dimen>
+    <dimen name="item_song_number_text_size">22sp</dimen>
+
+    <dimen name="tmec_item_song_right_default_height">120px</dimen>
+    <dimen name="tmec_item_song_right_default_width">532px</dimen>
+    <dimen name="tmec_item_song_right_icon_size">64px</dimen>
+    <dimen name="tmec_item_song_right_icon_margin_left">32px</dimen>
+    <dimen name="tmec_item_song_right_image_size">100px</dimen>
+    <dimen name="tmec_item_song_right_image_margin_right">14px</dimen>
+    <dimen name="tmec_item_song_right_singer_margin_left">126px</dimen>
+    <dimen name="tmec_item_song_right_singer_margin_bottom">18px</dimen>
+    <dimen name="tmec_item_song_right_name_margin_top">26px</dimen>
+    <dimen name="tmec_item_song_right_score_margin_top">20px</dimen>
+    <dimen name="tmec_item_song_right_score_margin_left">10px</dimen>
+
+    <!-- song image left -->
+    <dimen name="image_left_height">98px</dimen>
+    <dimen name="image_left_rank_image_height">40px</dimen>
+    <dimen name="image_left_rank_image_width">20px</dimen>
+    <dimen name="image_left_rank_image_margin_left">48px</dimen>
+    <dimen name="image_left_song_image_size">80px</dimen>
+    <dimen name="image_left_song_image_margin_left">98px</dimen>
+    <dimen name="image_left_song_name_margin_top">15px</dimen>
+    <dimen name="image_left_song_name_margin_left">208px</dimen>
+    <dimen name="image_left_singer_name_margin_bottom">15px</dimen>
+    <dimen name="image_left_singer_name_margin_left">212px</dimen>
+    <dimen name="image_left_song_name_max_width">216px</dimen>
+    <dimen name="image_left_singer_name_max_width">212px</dimen>
+
+</resources>

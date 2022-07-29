@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.databinding.DataBindingUtil;
 
 import com.tsdl.practices.R;
+import com.tsdl.practices.base.BaseActivity;
 import com.tsdl.practices.databinding.ActivityGameBinding;
 
 public class GameActivity extends BaseActivity implements View.OnClickListener {

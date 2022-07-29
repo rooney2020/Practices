@@ -7,10 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.tsdl.practices.R;
 import com.tsdl.practices.adapter.ContentAdapter;
+import com.tsdl.practices.base.BaseActivity;
 import com.tsdl.practices.databinding.ActivityMainBinding;
 import com.tsdl.practices.manager.SkinManager;
 import com.tsdl.practices.model.DemoDetail;
-import com.tsdl.practices.popup.CustomDialog;
+import com.tsdl.practices.view.CustomDialog;
 
 public class MainActivity extends BaseActivity {
 

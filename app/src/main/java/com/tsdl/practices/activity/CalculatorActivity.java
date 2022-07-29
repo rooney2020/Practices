@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.databinding.DataBindingUtil;
 
 import com.tsdl.practices.R;
+import com.tsdl.practices.base.BaseActivity;
 import com.tsdl.practices.databinding.ActivityCalculatorBinding;
 import com.tsdl.practices.exception.CalculateException;
 import com.tsdl.practices.model.Calculator;

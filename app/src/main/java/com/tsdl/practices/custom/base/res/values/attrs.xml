@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright © 2019-2020 Human Horizons (Shanghai) Cloud Computing Technology Co., Ltd. All Rights Reserved.
+-->
+<resources>
+    <declare-styleable name="TmecTextView">
+        <attr name="android:textColor" format="reference|color" />
+        <attr name="tmec_text_night_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecImageView">
+        <attr name="android:src" format="reference|color" />
+        <attr name="android:background" format="reference|color" />
+        <attr name="tmec_image_night_src" format="reference" />
+        <attr name="tmec_image_night_bg" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecTextTips">
+        <attr name="tips_mode">
+            <enum name="top_mode" value="0" />
+            <enum name="bottom_mode" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

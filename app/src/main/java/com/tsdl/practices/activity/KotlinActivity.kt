@@ -3,6 +3,7 @@ package com.tsdl.practices.activity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.tsdl.practices.R
+import com.tsdl.practices.base.BaseActivity
 import com.tsdl.practices.databinding.ActivityKotlinBinding
 import com.tsdl.practices.model.KotlinData
 import com.tsdl.practices.model.KotlinSingleton

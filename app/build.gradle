@@ -4,7 +4,7 @@ plugins {
 }
 
 def srcDirs = [
-        'com/tsdl/practices/popup',
+        // 'com/tsdl/practices/popup',
 ]
 
 android {
@@ -17,12 +17,16 @@ android {
         versionCode 1
         versionName "1.0"
 
-//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
-
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -38,6 +42,17 @@ android {
     dataBinding {
         enabled = true
     }
+//    android.libraryVariants.all { variant ->
+//        variant.outputs.all {
+//            def fileName = "tmec-common-components-" + releaseTime() + ".aar"
+//            outputFileName = fileName
+//        }
+//    }
+}
+
+static def releaseTime() {
+    return new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))
+
 }
 
 dependencies {

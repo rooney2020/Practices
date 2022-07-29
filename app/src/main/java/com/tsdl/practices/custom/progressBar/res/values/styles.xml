@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="progressBar" parent="android:Widget.Material.Light.ProgressBar.Horizontal">
+        <item name="maxHeight">100dp</item>
+        <item name="minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_night_bg</item>
+    </style>
+</resources>

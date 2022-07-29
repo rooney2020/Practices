@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TmecViewSlideSelected">
+        <attr name="tmec_show_circle_number" format="integer" />
+        <attr name="tmec_show_current_circle" format="integer"/>
+    </declare-styleable>
+</resources>

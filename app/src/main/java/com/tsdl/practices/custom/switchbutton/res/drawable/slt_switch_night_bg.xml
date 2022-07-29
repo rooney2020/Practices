@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <selector>
+            <item android:drawable="@drawable/switch_on_pressed_night" android:state_checked="true" />
+            <item android:drawable="@drawable/switch_off_pressed_night" />
+        </selector>
+    </item>
+
+    <item android:state_enabled="false">
+        <selector>
+            <item android:drawable="@drawable/switch_on_disable_night" android:state_checked="true" />
+            <item android:drawable="@drawable/switch_off_disable_night" />
+        </selector>
+    </item>
+
+    <item android:drawable="@drawable/switch_on_normal_night" android:state_checked="true" />
+    <item android:drawable="@drawable/switch_off_normal_night" />
+</selector>

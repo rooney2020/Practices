@@ -10,12 +10,15 @@
         <entry key="..\:/path/code/Practices/app/src/main/res/layout/activity_calculator.xml" value="0.23369565217391305" />
         <entry key="app/src/main/java/com/tsdl/practices/popup/res/layout/custom_dialog.xml" value="0.15577507598784193" />
         <entry key="app/src/main/res/drawable/input_button_radius.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/slt_btn_icon.xml" value="0.1775" />
         <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.3104166666666667" />
         <entry key="app/src/main/res/layout/activity_game.xml" value="0.31197916666666664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31214174048983845" />
         <entry key="app/src/main/res/layout/activity_music.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.15577507598784193" />
         <entry key="app/src/main/res/layout/item_content_list.xml" value="0.12166172106824925" />
+        <entry key="app/src/main/res/layout/v_layout_toast.xml" value="0.3203125" />
       </map>
     </option>
   </component>

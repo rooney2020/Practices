@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tmec_item_phone_height">
+
+    <com.tsdl.practices.custom.textview.TmecTextExplainBody
+        android:id="@+id/first_name"
+        android:layout_width="@dimen/tmec_item_phone_left_size"
+        android:layout_height="@dimen/tmec_item_phone_left_size"
+        android:layout_marginLeft="@dimen/tmec_item_phone_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_icon_phone_contects_night"
+        android:gravity="center"
+        app:tmec_text_color_mode="normal_mode" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tmec_item_phone_number_height"
+        android:layout_marginLeft="@dimen/tmec_item_phone_number_margin_left"
+        android:layout_centerVertical="true">
+
+        <com.tsdl.practices.custom.textview.TmecTextMinorTitle
+            android:id="@+id/phone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tmec_text_color_mode="normal_mode" />
+
+        <com.tsdl.practices.custom.textview.TmecTextMinorTitle
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tmec_text_color_mode="normal_mode" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tmec_item_phone_left_size"
+        android:layout_marginRight="@dimen/tmec_item_phone_margin"
+        android:layout_centerVertical="true">
+
+        <com.tsdl.practices.custom.textview.TmecTextTipsTitle
+            android:id="@+id/phone_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:tmec_text_color_mode="disable_mode" />
+
+        <com.tsdl.practices.custom.textview.TmecTextTipsTitle
+            android:id="@+id/phone_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:tmec_text_color_mode="disable_mode" />
+
+    </RelativeLayout>
+
+    <com.tsdl.practices.custom.base.TmecImageView
+        android:id="@+id/item_phone_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/tmec_item_phone_margin"
+        android:layout_marginRight="@dimen/tmec_item_phone_margin_right"
+        android:background="@drawable/item_phone_bottom_line"
+        app:tmec_image_night_bg="@drawable/item_phone_bottom_line_night" />
+
+</RelativeLayout>

@@ -11,6 +11,7 @@ import android.view.View;
 import androidx.databinding.DataBindingUtil;
 
 import com.tsdl.practices.R;
+import com.tsdl.practices.base.BaseActivity;
 import com.tsdl.practices.databinding.ActivityMusicBinding;
 import com.tsdl.practices.service.MusicService;
 import com.tsdl.practices.util.LogUtils;

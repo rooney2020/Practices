@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TmecSwitch" parent="android:Widget.Material.CompoundButton.Switch">
+        <item name="android:track">@null</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:showText">false</item>
+    </style>
+</resources>

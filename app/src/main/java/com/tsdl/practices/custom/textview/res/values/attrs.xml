@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TmecBaseTextView">
+
+        <attr name="tmec_text_color_mode" >
+            <enum name="highlight_mode" value="0" />
+            <enum name="normal_mode" value="1" />
+            <enum name="disable_mode" value="2" />
+            <enum name="aux_mode" value="3" />
+            <enum name="minor_mode" value="4" />
+        </attr>
+
+    </declare-styleable>
+</resources>

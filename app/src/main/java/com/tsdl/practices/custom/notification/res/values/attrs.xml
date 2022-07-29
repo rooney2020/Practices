@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TmecNotification">
+        <attr name="tmec_notification_mode">
+            <enum name="notification_normal" value="0" />
+            <enum name="notification_two" value="1" />
+            <enum name="notification_three" value="2" />
+        </attr>
+        <attr name="tmec_icon" format="reference" />
+        <attr name="tmec_icon_night" format="reference" />
+        <attr name="tmec_image" format="reference" />
+        <attr name="tmec_image_night" format="reference" />
+        <attr name="tmec_top_title" format="string" />
+        <attr name="tmec_top_content" format="string" />
+        <attr name="tmec_bottom_title" format="string" />
+        <attr name="tmec_bottom_content_one" format="string" />
+        <attr name="tmec_bottom_content_two" format="string" />
+        <attr name="tmec_bottom_content_three" format="string" />
+    </declare-styleable>
+
+</resources>

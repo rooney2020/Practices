@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TmecViewSlideSelected">
+        <attr name="tmec_show_circle_number" format="integer" />
+        <attr name="tmec_show_current_circle" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TmecNotification">
+        <attr name="tmec_notification_mode">
+            <enum name="notification_normal" value="0" />
+            <enum name="notification_two" value="1" />
+            <enum name="notification_three" value="2" />
+        </attr>
+        <attr name="tmec_icon" format="reference" />
+        <attr name="tmec_icon_night" format="reference" />
+        <attr name="tmec_image" format="reference" />
+        <attr name="tmec_image_night" format="reference" />
+        <attr name="tmec_top_title" format="string" />
+        <attr name="tmec_top_content" format="string" />
+        <attr name="tmec_bottom_title" format="string" />
+        <attr name="tmec_bottom_content_one" format="string" />
+        <attr name="tmec_bottom_content_two" format="string" />
+        <attr name="tmec_bottom_content_three" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TsListItemSetting">
+        <attr name="tmec_text_left_value" format="string|reference" />
+        <attr name="tmec_annotation_value" format="string|reference"/>
+        <attr name="tmec_text_right_value" format="string|reference" />
+        <attr name="tmec_show_bottom_line" format="boolean" />
+        <attr name="tmec_setting_switch_display" format="boolean" />
+        <attr name="tmec_setting_switch_check" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecItemSong">
+        <attr name="tmec_item_song_number" format="string" />
+        <attr name="tmec_item_song_score" format="string" />
+        <attr name="tmec_item_song_singer" format="string" />
+        <attr name="tmec_item_song_songname" format="string" />
+        <attr name="tmec_icon_left_drawable" format="reference" />
+        <attr name="tmec_icon_right_drawable" format="reference" />
+        <attr name="tmec_icon_left_night_drawable" format="reference" />
+        <attr name="tmec_icon_right_night_drawable" format="reference" />
+        <attr name="tmec_item_song_show_left_icon" format="boolean" />
+        <attr name="tmec_item_song_show_bottom_line" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecItemSongImageRight">
+        <attr name="showCheckBox" format="boolean" />
+        <attr name="song_name" format="string" />
+        <attr name="singer_name" format="string" />
+        <attr name="song_score" format="string" />
+        <attr name="right_image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecItemSongImageLeft">
+        <attr name="image_left_song_name" format="string" />
+        <attr name="image_left_singer_name" format="string" />
+        <attr name="image_left_album_image" format="reference" />
+        <attr name="image_left_song_rank">
+            <enum name="rank_first" value="1"/>
+            <enum name="rank_second" value="2"/>
+            <enum name="rank_third" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TmecViewGroupHeader">
+        <attr name="tmec_item_count" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecBaseTextView">
+
+        <attr name="tmec_text_color_mode" >
+            <enum name="highlight_mode" value="0" />
+            <enum name="normal_mode" value="1" />
+            <enum name="disable_mode" value="2" />
+            <enum name="aux_mode" value="3" />
+            <enum name="minor_mode" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="TmecItemPhone">
+        <attr name="tmec_phone_number" format="string" />
+        <attr name="tmec_phone_name" format="string" />
+        <attr name="tmec_phone_kind" format="string" />
+        <attr name="tmec_phone_time" format="string" />
+        <attr name="tmec_item_phone_show_bottom_line" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecButtonText">
+        <attr name="android:text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecButtonIcon">
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:text" format="string" />
+        <attr name="tmec_button_icon_img" format="reference" />
+        <attr name="tmec_button_icon_night_img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecButtonHighLightIcon">
+        <attr name="android:enabled" format="boolean" />
+        <attr name="android:text" format="string" />
+        <attr name="tmec_button_icon_highlight_img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecTextView">
+        <attr name="android:textColor" format="reference|color" />
+        <attr name="tmec_text_night_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecImageView">
+        <attr name="android:src" format="reference|color" />
+        <attr name="android:background" format="reference|color" />
+        <attr name="tmec_image_night_src" format="reference" />
+        <attr name="tmec_image_night_bg" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecTextTips">
+        <attr name="tips_mode">
+            <enum name="top_mode" value="0" />
+            <enum name="bottom_mode" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TmecSeekBarVoice">
+        <attr name="android:max"/>
+        <attr name="android:progress"/>
+        <attr name="tmec_seekbar_left_name" format="string"/>
+        <attr name="tmec_seekbar_right_value" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TmecSeekBarMedia">
+        <attr name="android:max"/>
+        <attr name="android:progress"/>
+        <attr name="tmec_seekbar_start_value" format="string"/>
+        <attr name="tmec_seekbar_end_value" format="string"/>
+    </declare-styleable>
+</resources>

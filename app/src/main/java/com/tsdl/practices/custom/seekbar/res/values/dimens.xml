@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tmec_seekbar_width">396dp</dimen>
+    <dimen name="tmec_seekbar_height">12dp</dimen>
+    <dimen name="tmec_seekbar_margin_start">37dp</dimen>
+    <dimen name="tmec_seekbar_margin_end">33dp</dimen>
+
+
+    <dimen name="dimens5dp">5dp</dimen>
+    <dimen name="dimens10dp">10dp</dimen>
+    <dimen name="dimens11dp">11dp</dimen>
+    <dimen name="dimens1038dp">1038dp</dimen>
+    <dimen name="dimens_seekbar_50dp">50dp</dimen>
+    <dimen name="dimens_seekbar_12dp">12dp</dimen>
+    <dimen name="dimens_seekbar_8dp">8dp</dimen>
+    <dimen name="dimens_seekbar_stroke_1dp">1dp</dimen>
+    <dimen name="dimens_seekbar_stroke_4dp">4dp</dimen>
+    <dimen name="dimens_seekbar_2dp">2dp</dimen>
+
+</resources>
