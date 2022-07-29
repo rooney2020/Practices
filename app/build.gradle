@@ -3,6 +3,10 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+def srcDirs = [
+        'com/tsdl/practices/popup',
+]
+
 android {
     compileSdk 32
 
@@ -26,7 +30,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
+    sourceSets {
+        srcDirs.forEach {
+            main.res.srcDirs += 'src/main/java/' + it + '/res'
+        }
+    }
     dataBinding {
         enabled = true
     }

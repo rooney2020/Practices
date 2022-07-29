@@ -16,6 +16,7 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
 import com.tsdl.practices.R;
@@ -32,12 +33,18 @@ public class MusicService extends Service {
         LogUtils.logD(TAG, "MusicService");
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onCreate() {
         super.onCreate();
         LogUtils.logD(TAG, "onCreate");
         Intent intent = new Intent(this, MusicActivity.class);
-        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
+        PendingIntent pi;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
+        } else {
+            pi = PendingIntent.getActivity(this, 0, intent, 0);
+        }
         String channelId = getPackageName();
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

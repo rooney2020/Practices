@@ -50,7 +50,7 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentV
         ItemContentListBinding binding = DataBindingUtil.getBinding(holder.itemView);
         DemoDetail demoDetail = data[position];
         if (binding != null) {
-            if (demoDetail.getActivityClass() == null) {
+            if (demoDetail.getCallback() == null) {
                 binding.tvItemName.setText(demoDetail.getTitleId());
                 binding.tvItemName.setTextSize(24);
             } else {
@@ -61,8 +61,9 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentV
 
         holder.itemView.setOnClickListener(view -> {
             DemoDetail demo = data[holder.getAdapterPosition()];
-            if (demo.getActivityClass() != null) {
-                mContext.startActivity(new Intent(mContext, demo.getActivityClass()));
+            if (demo.getCallback() != null) {
+                demo.getCallback().execute();
+//                mContext.startActivity(new Intent(mContext, demo.getActivityClass()));
             }
         });
 
