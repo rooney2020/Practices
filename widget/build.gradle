@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.library'
+}
+
+def srcDirs = [
+        'com/tmec/common/sdk/base',
+        'com/tmec/common/sdk/toast',
+        'com/tmec/common/sdk/button',
+        'com/tmec/common/sdk/grouphead',
+        'com/tmec/common/sdk/switchbutton',
+        'com/tmec/common/sdk/settingitem',
+        'com/tmec/common/sdk/progressBar',
+        'com/tmec/common/sdk/searchbar',
+        'com/tmec/common/sdk/itemsong',
+        'com/tmec/common/sdk/textview',
+        'com/tmec/common/sdk/popup',
+        'com/tmec/common/sdk/rollpage',
+        'com/tmec/common/sdk/itemphone',
+        'com/tmec/common/sdk/seekbar',
+        'com/tmec/common/sdk/notification',
+        'com/tmec/common/sdk/viewtext',
+        'com/tmec/common/sdk/viewimage',
+]
+android {
+    compileSdk 30
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 30
+        versionCode 1
+        versionName "1.0.1"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        srcDirs.forEach {
+            main.res.srcDirs += 'src/main/java/' + it + '/res'
+        }
+    }
+
+    android.libraryVariants.all { variant ->
+        variant.outputs.all {
+            def fileName = "common-components-" + releaseTime() + ".aar"
+            outputFileName = fileName
+        }
+    }
+}
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+08:00"))
+
+}
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation 'junit:junit:4.+'
+}

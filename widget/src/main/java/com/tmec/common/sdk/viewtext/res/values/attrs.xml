@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TmecViewTextBelow">
+        <attr name="tmec_singer_img" format="reference" />
+        <attr name="tmec_singer_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TmecViewTextOverlay">
+        <attr name="tmec_img" format="reference" />
+        <attr name="tmec_name" format="string" />
+    </declare-styleable>
+</resources>

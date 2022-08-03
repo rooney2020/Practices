@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.TSToast" parent="android:TextAppearance">
+        <item name="android:textColor">@color/toast_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAllCaps">@bool/toast_textappearance_all_caps</item>
+        <item name="android:textSize">@dimen/toast_size</item>
+    </style>
+
+    <style name="DefaultToastLl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DefaultToastIv">
+        <item name="android:layout_width">@dimen/toast_image_width_64px</item>
+        <item name="android:layout_height">@dimen/toast_image_height_64px</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16px</item>
+    </style>
+
+    <style name="DefaultToastTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/toast_text_size_36px</item>
+    </style>
+
+
+</resources>

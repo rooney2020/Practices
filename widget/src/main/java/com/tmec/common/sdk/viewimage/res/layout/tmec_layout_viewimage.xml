@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vi_layout"
+    android:layout_width="@dimen/width_881px"
+    android:layout_height="@dimen/height_201px">
+
+    <com.tmec.common.sdk.base.TmecImageView
+        android:id="@+id/iv_square"
+        android:layout_width="@dimen/width_120px"
+        android:layout_height="@dimen/height_120px"
+        android:layout_marginLeft="@dimen/margin_left_53px"
+        android:layout_marginTop="@dimen/margin_top_41px" />
+
+    <com.tmec.common.sdk.base.TmecImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/width_88px"
+        android:layout_height="@dimen/height_88px"
+        android:layout_marginLeft="@dimen/margin_left_69px"
+        android:layout_marginTop="@dimen/margin_top_57px" />
+
+    <com.tmec.common.sdk.textview.TmecTextTitle
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_198px"
+        android:layout_marginTop="@dimen/margin_top_49px"
+        android:layout_marginRight="@dimen/margin_right_53px"
+        android:singleLine="true"
+        app:tmec_text_color_mode="normal_mode" />
+
+    <com.tmec.common.sdk.textview.TmecTextMinorTitle
+        android:id="@+id/tv_minor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_198px"
+        android:layout_marginTop="@dimen/margin_top_105px"
+        android:layout_marginRight="@dimen/margin_right_53px"
+        android:singleLine="true"
+        app:tmec_text_color_mode="minor_mode" />
+
+</RelativeLayout>

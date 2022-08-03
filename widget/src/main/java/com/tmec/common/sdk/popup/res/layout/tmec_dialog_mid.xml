@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tmec_dialog_mid"
+        android:layout_width="@dimen/width_888px"
+        android:layout_height="@dimen/height_488px">
+
+        <com.tmec.common.sdk.textview.TmecTextTitle
+            android:id="@+id/tv_title"
+            style="@style/mid_tv_title"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tmec_text_color_mode="normal_mode" />
+
+        <com.tmec.common.sdk.textview.TmecTextSmallBody
+            android:id="@+id/tv_content_two"
+            style="@style/mid_tv_content_two"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tmec_text_color_mode="normal_mode" />
+
+        <com.tmec.common.sdk.textview.TmecTextSmallBody
+            android:id="@+id/tv_content_one"
+            style="@style/mid_tv_content_one"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tmec_text_color_mode="normal_mode" />
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            style="@style/mid_layout_password"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/mid_et_password"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <com.tmec.common.sdk.button.TmecTextClick
+            android:id="@+id/tv_explain_content"
+            style="@style/mid_tv_explain_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tmec.common.sdk.button.TmecButtonHighLight
+            android:id="@+id/btn_ok"
+            style="@style/mid_btn_ok"
+            android:text="@string/btn_ok"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.tmec.common.sdk.button.TmecButtonCancel
+            android:id="@+id/btn_cancel"
+            style="@style/mid_btn_cancel"
+            android:text="@string/btn_cancel"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            style="@style/iv_progress"
+            android:src="@drawable/progress_night"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tmec.common.sdk.textview.TmecTextSmallTitle
+            android:id="@+id/mid_progress_title"
+            style="@style/mid_progress_title"
+            android:text="@string/progress_title"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tmec_text_color_mode="normal_mode" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

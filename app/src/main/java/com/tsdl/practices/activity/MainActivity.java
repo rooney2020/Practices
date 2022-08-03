@@ -5,18 +5,18 @@ import android.os.Bundle;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.tmec.common.sdk.base.SkinManager;
+import com.tmec.common.sdk.popup.TmecDialogSmall;
 import com.tsdl.practices.R;
 import com.tsdl.practices.adapter.ContentAdapter;
 import com.tsdl.practices.base.BaseActivity;
 import com.tsdl.practices.databinding.ActivityMainBinding;
-import com.tsdl.practices.manager.SkinManager;
 import com.tsdl.practices.model.DemoDetail;
-import com.tsdl.practices.view.CustomDialog;
 
 public class MainActivity extends BaseActivity {
 
     private ActivityMainBinding binding;
-    private CustomDialog customDialog;
+    private TmecDialogSmall customDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,13 +48,13 @@ public class MainActivity extends BaseActivity {
             customDialog.show();
             return;
         }
-        customDialog = new CustomDialog(MainActivity.this, CustomDialog.DIALOG_TYPE_SYSTEM);
+        customDialog = new TmecDialogSmall(MainActivity.this, TmecDialogSmall.DIALOG_TYPE_SYSTEM);
         customDialog.setTitle(getString(R.string.toast_title));
         customDialog.setMainContent(getString(R.string.toast_content));
         customDialog.setOnNegativeClickListener(view -> customDialog.dismiss());
         customDialog.setOnTapOutClickListener(view -> customDialog.dismiss());
-        customDialog.setOnTapOutClickListener(binding.rvContent, view -> customDialog.dismiss());
-        customDialog.setOnTapOutClickListener(binding.getRoot(), view -> customDialog.dismiss());
+//        customDialog.setOnTapOutClickListener(binding.rvContent, view -> customDialog.dismiss());
+//        customDialog.setOnTapOutClickListener(binding.getRoot(), view -> customDialog.dismiss());
         customDialog.show();
     }
 

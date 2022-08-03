@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/tmec_button_text_default_height"
+    android:orientation="vertical">
+
+    <com.tmec.common.sdk.textview.TmecTextTitle
+        android:id="@+id/btn_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tmec_text_color_mode="highlight_mode" />
+
+
+    <com.tmec.common.sdk.base.TmecImageView
+        android:id="@+id/btn_text_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tmec_button_text_line_margin_top"
+        android:background="@drawable/btn_text_line"
+        app:tmec_image_night_bg="@drawable/btn_text_line_night" />
+
+</LinearLayout>

@@ -1,7 +1,0 @@
-<resources>
-    <color name="dialog_dim">#AA000000</color>
-    <color name="input_bg_color_day">#FFFFFFFF</color>
-    <color name="input_bg_color_night">#8C000000</color>
-    <color name="input_text_color_night">#FF82848C</color>
-    <color name="input_text_color_day">#661C1C1C</color>
-</resources>

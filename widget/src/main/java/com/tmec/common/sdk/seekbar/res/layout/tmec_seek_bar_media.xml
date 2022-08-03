@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <SeekBar
+        android:id="@+id/sb_media"
+        android:layout_width="@dimen/dimens1038dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:splitTrack="false"
+        android:duplicateParentState="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.tmec.common.sdk.textview.TmecTextTipsTitle
+        android:id="@+id/tv_seekbar_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens5dp"
+        android:layout_marginStart="@dimen/dimens10dp"
+        app:tmec_text_color_mode="minor_mode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_media"/>
+    <com.tmec.common.sdk.textview.TmecTextTipsTitle
+        android:id="@+id/tv_seekbar_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_seekbar_start"
+        app:layout_constraintTop_toBottomOf="@+id/sb_media"
+        android:layout_marginEnd="@dimen/dimens11dp"
+        app:tmec_text_color_mode="minor_mode"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

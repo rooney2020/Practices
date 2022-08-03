@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toast_content_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/toast_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/toast_proBar"
+            style="@style/DefaultToastIv"
+            android:indeterminateDrawable="@drawable/toast_progress" />
+
+        <com.tmec.common.sdk.base.TmecImageView
+            android:id="@+id/toast_icon_iv"
+            style="@style/DefaultToastIv"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_toast_night_charging"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/toast_double_message_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/toast_icon_iv"
+            android:orientation="vertical">
+
+            <com.tmec.common.sdk.textview.TmecTextBody
+                android:id="@+id/toast_message_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                app:tmec_text_color_mode="normal_mode" />
+
+            <com.tmec.common.sdk.textview.TmecTextExplainBody
+                android:id="@+id/toast_double_bottom_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="@integer/max_toast_line_1"
+                app:tmec_text_color_mode="aux_mode" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

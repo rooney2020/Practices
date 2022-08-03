@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tmec_dialog_big"
+        android:layout_width="@dimen/width_888px"
+        android:layout_height="@dimen/height_668px">
+
+        <com.tmec.common.sdk.textview.TmecTextTitle
+            android:id="@+id/tv_title"
+            style="@style/big_tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tmec_text_color_mode="normal_mode" />
+
+        <com.tmec.common.sdk.textview.TmecTextSmallBody
+            android:id="@+id/tv_main_content"
+            style="@style/tv_main_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tmec_text_color_mode="normal_mode" />
+
+        <com.tmec.common.sdk.button.TmecButtonHighLight
+            android:id="@+id/btn_ok"
+            style="@style/big_btn_ok"
+            android:text="@string/btn_ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.tmec.common.sdk.button.TmecButtonCancel
+            android:id="@+id/btn_cancel"
+            style="@style/big_btn_cancel"
+            android:text="@string/btn_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
