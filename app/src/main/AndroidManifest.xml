@@ -13,10 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         <service android:name=".service.MusicService" />
 
         <activity
-            android:name=".activity.MusicActivity"
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MusicActivity"
             android:exported="false" />
 
         <meta-data
@@ -24,16 +29,16 @@
             android:value="true" />
 
         <activity
-            android:name=".activity.GameActivity"
+            android:name=".GameActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.KotlinActivity"
+            android:name=".KotlinActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.CalculatorActivity"
+            android:name=".CalculatorActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".SmsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

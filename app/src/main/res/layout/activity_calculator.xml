@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/light_gary"
-        tools:context=".activity.CalculatorActivity">
+        tools:context=".CalculatorActivity">
 
         <TextView
             android:id="@+id/btn_more"

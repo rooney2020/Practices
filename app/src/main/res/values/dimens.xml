@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="page_title">12sp</dimen>
+    <dimen name="page_height">40dp</dimen>
+</resources>

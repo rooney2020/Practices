@@ -1,11 +1,12 @@
 package com.tsdl.practices.base;
 
-import android.app.Activity;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.tsdl.practices.util.LogUtils;
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends AppCompatActivity {
 
     public final String TAG = BaseActivity.this.getClass().getName();
 

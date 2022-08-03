@@ -9,19 +9,14 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Binder;
-import android.os.Build;
 import android.os.IBinder;
 
-import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
 import com.tsdl.practices.R;
-import com.tsdl.practices.activity.MainActivity;
-import com.tsdl.practices.activity.MusicActivity;
+import com.tsdl.practices.MusicActivity;
 import com.tsdl.practices.util.LogUtils;
 
 public class MusicService extends Service {

@@ -12,8 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/common_lib" />
-            <option value="$PROJECT_DIR$/service" />
+            <option value="$PROJECT_DIR$/widget" />
           </set>
         </option>
       </GradleProjectSettings>

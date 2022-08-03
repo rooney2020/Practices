@@ -27,6 +27,7 @@
     <string name="activity_kotlin">Kotlin</string>
     <string name="activity_game">Game</string>
     <string name="activity_music">Music</string>
+    <string name="activity_sms">短信接收</string>
     <string name="item_callback">Callback</string>
 
     <string name="game_start">Start</string>
@@ -43,4 +44,8 @@
     <string name="btn_dialog">Dialog</string>
     <string name="toast_title">警告</string>
     <string name="toast_content">请开启悬浮窗权限</string>
+
+    <string name="fragment_home">首页</string>
+    <string name="fragment_asset">资产</string>
+    <string name="fragment_mine">我的</string>
 </resources>

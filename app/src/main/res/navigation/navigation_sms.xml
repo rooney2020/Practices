@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_sms">
+
+<!--    <fragment-->
+<!--        android:id="@+id/radio_fm_fragment"-->
+<!--        android:name="com.tsdl.practices.fragment.RadioFmFragment"-->
+<!--        android:label="RadioFmFragment"-->
+<!--        tools:layout="@layout/layout_radio_fm">-->
+
+<!--        <action-->
+<!--            android:id="@+id/radio_fm_fragment_to_radio_am_fragment_action"-->
+<!--            app:destination="@id/radio_am_fragment" />-->
+
+<!--    </fragment>-->
+
+</navigation>
