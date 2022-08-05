@@ -43,4 +43,11 @@ public class Constants {
             R.drawable.icon_asset_active, R.drawable.icon_mine_active);
     public static final List<Integer> PAGE_INACTIVE_ICON_LIST = Arrays.asList(R.drawable.icon_home_inactive,
             R.drawable.icon_asset_inactive, R.drawable.icon_mine_inactive);
+
+    public static final String DATABASE_NAME = "AccountBill.db";
+    public static final String TABLE_BILL = "Bill";
+    public static final String COLUMN_BILL_TIME = "bill_time";
+    public static final String COLUMN_AMOUNT = "amount";
+    public static final String COLUMN_BILL_TYPE = "bill_type";
+    public static final String COLUMN_DETAIL = "detail";
 }

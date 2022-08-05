@@ -1,26 +1,39 @@
 package com.tsdl.practices.model;
 
+import android.content.ContentValues;
+
 import com.tsdl.practices.R;
+import com.tsdl.practices.util.Constants;
 
 public class Bill {
     private boolean isDate;
     private String mDate;
+    private String mBillTime;
     private int mType;
     private String mDetail;
     private float mAmount;
     private float mTotalAmount;
 
-    public Bill(int type, float amount, String detail) {
+    public Bill(int type, float amount, String detail, String billTime) {
         isDate = false;
         mType = type;
         mAmount = amount;
         mDetail = detail;
+        mBillTime = billTime;
     }
 
     public Bill(String date, float totalAmount) {
         isDate = true;
         mDate = date;
         mTotalAmount = totalAmount;
+    }
+
+    public String getBillTime() {
+        return mBillTime;
+    }
+
+    public void setBillTime(String billTime) {
+        this.mBillTime = billTime;
     }
 
     public boolean isDate() {
@@ -112,5 +125,14 @@ public class Bill {
             default:
                 return R.drawable.btn_account;
         }
+    }
+
+    public ContentValues getSql() {
+        ContentValues values = new ContentValues();
+        values.put(Constants.COLUMN_AMOUNT, mAmount);
+        values.put(Constants.COLUMN_BILL_TYPE, mType);
+        values.put(Constants.COLUMN_DETAIL, mDetail);
+        values.put(Constants.COLUMN_BILL_TIME, mBillTime);
+        return values;
     }
 }
