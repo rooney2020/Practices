@@ -48,4 +48,9 @@
     <string name="fragment_home">首页</string>
     <string name="fragment_asset">资产</string>
     <string name="fragment_mine">我的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icon_title">记一笔</string>
+    <string name="income_suffix">月收入(元)</string>
+    <string name="outcome_suffix">月支出(元)</string>
 </resources>

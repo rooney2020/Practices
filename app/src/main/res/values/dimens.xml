@@ -1,5 +1,16 @@
 <resources>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="page_title">12sp</dimen>
+    <dimen name="bill_type_icon_title">14sp</dimen>
     <dimen name="page_height">40dp</dimen>
+    <dimen name="bill_top_height">300px</dimen>
+    <dimen name="bill_icon_height">120px</dimen>
+    <dimen name="bill_type_icon_height">120px</dimen>
+
+    <dimen name="margin_2">2px</dimen>
+    <dimen name="margin_10">10px</dimen>
+    <dimen name="margin_20">20px</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_150">150px</dimen>
+    <dimen name="line_width">1dp</dimen>
 </resources>

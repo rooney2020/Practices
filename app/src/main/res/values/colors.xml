@@ -7,7 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gary">#88888888</color>
+    <color name="gary">#EEEEEEEE</color>
     <color name="light_gary">#44888888</color>
     <color name="transparent">#00000000</color>
+
+    <color name="text_color_income">#6BD26B</color>
+    <color name="text_color_outcome">#F35858</color>
 </resources>
