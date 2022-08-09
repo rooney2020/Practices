@@ -51,7 +51,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
             binding.ivIcon.setImageResource(bill.getTypeIcon());
             if (bill.isDate()) {
                 binding.tvDate.setVisibility(View.VISIBLE);
-                binding.ivIcon.setVisibility(View.INVISIBLE);
+                binding.ivIcon.setVisibility(View.GONE);
                 binding.tvDate.setText(bill.getDate() + " " + bill.getTotalAmount());
             } else {
                 if (bill.isOutcome()) {

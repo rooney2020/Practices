@@ -6,6 +6,7 @@ import com.tsdl.practices.R;
 import com.tsdl.practices.util.Constants;
 
 public class Bill {
+    private int mId;
     private boolean isDate;
     private String mDate;
     private String mBillTime;
@@ -22,10 +23,27 @@ public class Bill {
         mBillTime = billTime;
     }
 
+    public Bill(int id, int type, float amount, String detail, String billTime) {
+        isDate = false;
+        mId = id;
+        mType = type;
+        mAmount = amount;
+        mDetail = detail;
+        mBillTime = billTime;
+    }
+
     public Bill(String date, float totalAmount) {
         isDate = true;
         mDate = date;
         mTotalAmount = totalAmount;
+    }
+
+    public int getId() {
+        return mId;
+    }
+
+    public void setId(int id) {
+        this.mId = id;
     }
 
     public String getBillTime() {
@@ -127,7 +145,7 @@ public class Bill {
         }
     }
 
-    public ContentValues getSql() {
+    public ContentValues getCreateSql() {
         ContentValues values = new ContentValues();
         values.put(Constants.COLUMN_AMOUNT, mAmount);
         values.put(Constants.COLUMN_BILL_TYPE, mType);

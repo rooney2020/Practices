@@ -46,6 +46,7 @@ public class Constants {
 
     public static final String DATABASE_NAME = "AccountBill.db";
     public static final String TABLE_BILL = "Bill";
+    public static final String COLUMN_ID = "id";
     public static final String COLUMN_BILL_TIME = "bill_time";
     public static final String COLUMN_AMOUNT = "amount";
     public static final String COLUMN_BILL_TYPE = "bill_type";
