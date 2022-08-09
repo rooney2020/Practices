@@ -2,10 +2,10 @@ package com.tsdl.practices.model;
 
 import android.content.ContentValues;
 
-import com.tsdl.practices.R;
 import com.tsdl.practices.util.Constants;
 
 public class Bill {
+
     private int mId;
     private boolean isDate;
     private String mDate;
@@ -100,49 +100,6 @@ public class Bill {
 
     public void setAmount(float amount) {
         this.mAmount = amount;
-    }
-
-    public boolean isOutcome() {
-        switch (mType) {
-            case 3:
-            case 4:
-                return false;
-            case 0:
-            case 1:
-            case 2:
-            default:
-                return true;
-        }
-    }
-
-    public String getTypeText() {
-        switch (mType) {
-            case 0:
-                return "零食";
-            case 1:
-                return "买菜";
-            case 2:
-                return "水果";
-            case 3:
-                return "工资";
-            case 4:
-                return "投资";
-            default:
-                return "其他";
-        }
-    }
-
-    public int getTypeIcon() {
-        switch (mType) {
-            case 0:
-                return R.drawable.icon_type_snack;
-            case 1:
-                return R.drawable.icon_type_vegetable;
-            case 2:
-                return R.drawable.icon_type_fruit;
-            default:
-                return R.drawable.btn_account;
-        }
     }
 
     public ContentValues getCreateSql() {

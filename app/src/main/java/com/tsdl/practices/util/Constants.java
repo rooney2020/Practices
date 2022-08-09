@@ -39,16 +39,24 @@ public class Constants {
     public static final int PAGE_NUM = 3;
     public static final List<Integer> PAGE_TITLE_LIST = Arrays.asList(R.string.fragment_home,
             R.string.fragment_asset, R.string.fragment_mine);
+    public static final List<Integer> PAGE_ACCOUNT_TITLE_LIST = Arrays.asList(R.string.fragment_outcome,
+            R.string.fragment_income, R.string.fragment_transfer_account);
     public static final List<Integer> PAGE_ACTIVE_ICON_LIST = Arrays.asList(R.drawable.icon_home_active,
             R.drawable.icon_asset_active, R.drawable.icon_mine_active);
     public static final List<Integer> PAGE_INACTIVE_ICON_LIST = Arrays.asList(R.drawable.icon_home_inactive,
             R.drawable.icon_asset_inactive, R.drawable.icon_mine_inactive);
 
+    public static final String SP_INIT = "sp_init";
+    public static final String SP_KEY_INIT = "sp_key_init";
     public static final String DATABASE_NAME = "AccountBill.db";
     public static final String TABLE_BILL = "Bill";
+    public static final String TABLE_BILL_TYPE = "BillType";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_BILL_TIME = "bill_time";
     public static final String COLUMN_AMOUNT = "amount";
     public static final String COLUMN_BILL_TYPE = "bill_type";
     public static final String COLUMN_DETAIL = "detail";
+    public static final String COLUMN_NAME = "name";
+    public static final String COLUMN_ICON_ID = "icon_id";
+    public static final String COLUMN_IS_INCOME = "is_income";
 }

@@ -48,9 +48,40 @@
     <string name="fragment_home">首页</string>
     <string name="fragment_asset">资产</string>
     <string name="fragment_mine">我的</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_income">收入</string>
+    <string name="fragment_outcome">支出</string>
+    <string name="fragment_transfer_account">转账</string>
+
     <string name="icon_title">记一笔</string>
     <string name="income_suffix">月收入(元)</string>
     <string name="outcome_suffix">月支出(元)</string>
+
+    <!--  支出类别  -->
+    <string name="type_eat">餐饮</string>
+    <string name="type_traffic">交通</string>
+    <string name="type_shopping">购物</string>
+    <string name="type_live">居住</string>
+    <string name="type_amusement">娱乐</string>
+    <string name="type_medical">医疗</string>
+    <string name="type_education">教育</string>
+    <string name="type_contact">人情</string>
+    <string name="type_other">其他</string>
+    <string name="type_snack">零食</string>
+    <string name="type_supermarket">超市</string>
+    <string name="type_vegetable">买菜</string>
+    <string name="type_dinner">外出就餐</string>
+    <string name="type_fruit">水果</string>
+    <string name="type_car">打车</string>
+    <string name="type_telephone_bill">话费网费</string>
+    <string name="type_parent">孝敬父母</string>
+
+    <!--  收入类别  -->
+    <string name="type_salary">工资</string>
+    <string name="type_red_packet">红包</string>
+    <string name="type_reimbursement">报销</string>
+    <string name="type_part_time_job">兼职</string>
+    <string name="type_investment_income">投资收益</string>
+    <string name="type_other_income">其他收入</string>
+    <string name="type_social_security">社保金</string>
+    <string name="type_public_reserve_funds">公积金</string>
 </resources>

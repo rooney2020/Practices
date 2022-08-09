@@ -10,14 +10,42 @@
         <entry key="../../.gradle/caches/transforms-3/106f330018f30286176904eb19cb5d33/transformed/material-1.4.0/res/layout/design_layout_tab_icon.xml" value="0.1" />
         <entry key="..\:/path/code/Practices/app/src/main/res/layout/activity_calculator.xml" value="0.23369565217391305" />
         <entry key="app/src/main/java/com/tsdl/practices/popup/res/layout/custom_dialog.xml" value="0.15577507598784193" />
+        <entry key="app/src/main/res/drawable/abc.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bg_icon.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/bg_income.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/bg_outcome.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/bg_type_snacks.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bg_vertical_line.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/bt_baoxiao.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_car.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_eat.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_education.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_fruit.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_hongbao.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_household.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_investment_income.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_lend.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_live.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_living_expenses.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_medical.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_money.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_other.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_other_income.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_part_time_job.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_public_reserve_funds.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_reimbursement.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_repayment.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_salary.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_shebao.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_shopping.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_snack.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_traffic.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_vegetable.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/bt_yule.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/icon_asset.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/input_button_radius.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/slt_btn_icon.xml" value="0.1775" />
+        <entry key="app/src/main/res/layout/activity_account.xml" value="0.30104166666666665" />
         <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.3104166666666667" />
         <entry key="app/src/main/res/layout/activity_game.xml" value="0.31197916666666664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31214174048983845" />
@@ -26,8 +54,11 @@
         <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.15577507598784193" />
         <entry key="app/src/main/res/layout/fragment_asset.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_income.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/fragment_mine.xml" value="0.30104166666666665" />
+        <entry key="app/src/main/res/layout/fragment_outcome.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/fragment_scrolling.xml" value="0.3203125" />
+        <entry key="app/src/main/res/layout/fragment_transfer_account.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/item_bill.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_content_list.xml" value="0.12166172106824925" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.31979166666666664" />
