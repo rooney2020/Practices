@@ -56,7 +56,7 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_income.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/fragment_mine.xml" value="0.30104166666666665" />
-        <entry key="app/src/main/res/layout/fragment_outcome.xml" value="0.3203125" />
+        <entry key="app/src/main/res/layout/fragment_outcome.xml" value="0.3121951219512195" />
         <entry key="app/src/main/res/layout/fragment_scrolling.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/fragment_transfer_account.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/item_bill.xml" value="0.33" />

@@ -25,7 +25,7 @@ public class DataManager {
     private final SQLiteDatabase mSQLiteDatabase;
 
     private DataManager(Context context) {
-        DataBaseManager mDataBaseManager = new DataBaseManager(context, Constants.DATABASE_NAME, null, 6);
+        DataBaseManager mDataBaseManager = new DataBaseManager(context, Constants.DATABASE_NAME, null, 7);
         mSQLiteDatabase = mDataBaseManager.getWritableDatabase();
 
         if (mIsInit || isInit(context)) {

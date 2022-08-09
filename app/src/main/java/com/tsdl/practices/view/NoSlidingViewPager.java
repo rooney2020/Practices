@@ -22,7 +22,7 @@ public class NoSlidingViewPager extends ViewPager implements View.OnTouchListene
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        return true;
+        return super.onInterceptTouchEvent(ev);
     }
 
 

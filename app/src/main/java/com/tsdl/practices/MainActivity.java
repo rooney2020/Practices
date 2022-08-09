@@ -34,8 +34,8 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         initView();
-        initDB();
-        mHandler.sendMessageDelayed(mHandler.obtainMessage(), 3000);
+//        initDB();
+//        mHandler.sendMessageDelayed(mHandler.obtainMessage(), 3000);
     }
 
     private void initView() {

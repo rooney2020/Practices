@@ -104,6 +104,9 @@ public class Bill {
 
     public ContentValues getCreateSql() {
         ContentValues values = new ContentValues();
+        if (mId != 0) {
+            values.put(Constants.COLUMN_ID, mId);
+        }
         values.put(Constants.COLUMN_AMOUNT, mAmount);
         values.put(Constants.COLUMN_BILL_TYPE, mType);
         values.put(Constants.COLUMN_DETAIL, mDetail);

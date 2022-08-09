@@ -44,5 +44,6 @@ public class AccountActivity extends BaseActivity {
                     .setCustomView(new PageItemView(this)
                             .setText(getResources().getString(Constants.PAGE_ACCOUNT_TITLE_LIST.get(i)))));
         }
+        mBinding.btnBack.setOnClickListener(view -> onBackPressed());
     }
 }
