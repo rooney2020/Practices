@@ -53,5 +53,5 @@ public <init> (android.content.Context,android.util.AttributeSet,int);
 -keep class com.tmec.common.sdk.toast.** {*;}
 -keep class com.tmec.common.sdk.popup.** {*;}
 -keep class com.tmec.common.sdk.viewtext.** {*;}
--keep class com.tmec.common.sdk.base.SkinManager {*;}
+-keep class com.tmec.common.sdk.core.SkinManager {*;}
 -keep class ** {*;}

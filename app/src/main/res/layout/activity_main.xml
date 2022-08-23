@@ -7,11 +7,11 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.tmec.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
-        tools:context=".MainActivity"
+        tools:context=".activity.MainActivity"
         android:focusable="true">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -23,5 +23,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.tmec.common.sdk.base.BaseConstraintLayout>
 </layout>

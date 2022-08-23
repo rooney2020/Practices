@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<resources>
-  <declare-styleable name="TmecViewGroupHeader">
-    <attr name="tmec_item_count" format="integer" />
-  </declare-styleable>
-</resources>

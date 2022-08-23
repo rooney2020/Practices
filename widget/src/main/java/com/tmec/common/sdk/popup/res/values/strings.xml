@@ -1,7 +1,0 @@
-<resources>
-    <string name="btn_ok">确定</string>
-    <string name="btn_cancel">取消</string>
-    <string name="hint_password">请输入密码</string>
-    <string name="progress_title">正在检查更新</string>
-    <string name="toast_content">请开启悬浮窗权限</string>
-</resources>

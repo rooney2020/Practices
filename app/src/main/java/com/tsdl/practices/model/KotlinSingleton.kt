@@ -1,6 +1,6 @@
 package com.tsdl.practices.model
 
-import com.tsdl.practices.util.LogUtils
+import com.tsdl.common.util.LogUtils
 
 object KotlinSingleton {
     fun singletonTest() {

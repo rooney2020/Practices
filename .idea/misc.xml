@@ -7,15 +7,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.21195652173913043" />
         <entry key="../../.gradle/caches/transforms-3/106f330018f30286176904eb19cb5d33/transformed/material-1.4.0/res/layout/design_layout_tab_icon.xml" value="0.1" />
         <entry key="..\:/path/code/Practices/app/src/main/res/layout/activity_calculator.xml" value="0.23369565217391305" />
         <entry key="app/src/main/java/com/tsdl/practices/popup/res/layout/custom_dialog.xml" value="0.15577507598784193" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.309" />
         <entry key="app/src/main/res/drawable/abc.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bg_icon.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/bg_income.xml" value="0.267" />
         <entry key="app/src/main/res/drawable/bg_outcome.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/bg_type_snacks.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bg_vertical_line.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/bt_amusement.xml" value="0.309" />
         <entry key="app/src/main/res/drawable/bt_baoxiao.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bt_car.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bt_eat.xml" value="0.235" />
@@ -42,27 +45,38 @@
         <entry key="app/src/main/res/drawable/bt_traffic.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bt_vegetable.xml" value="0.235" />
         <entry key="app/src/main/res/drawable/bt_yule.xml" value="0.235" />
+        <entry key="app/src/main/res/drawable/btn_account.xml" value="0.3085" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.309" />
         <entry key="app/src/main/res/drawable/icon_asset.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/input_button_radius.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/slt_btn_icon.xml" value="0.1775" />
-        <entry key="app/src/main/res/layout/activity_account.xml" value="0.30104166666666665" />
-        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.3104166666666667" />
+        <entry key="app/src/main/res/layout/activity_account.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_game.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/activity_kotlin.xml" value="0.30625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31214174048983845" />
         <entry key="app/src/main/res/layout/activity_music.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.31197916666666664" />
+        <entry key="app/src/main/res/layout/activity_sms.xml" value="0.30625" />
         <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.15577507598784193" />
         <entry key="app/src/main/res/layout/fragment_asset.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_income.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/fragment_mine.xml" value="0.30104166666666665" />
-        <entry key="app/src/main/res/layout/fragment_outcome.xml" value="0.3121951219512195" />
+        <entry key="app/src/main/res/layout/fragment_outcome.xml" value="0.11458333333333333" />
         <entry key="app/src/main/res/layout/fragment_scrolling.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/fragment_transfer_account.xml" value="0.3203125" />
         <entry key="app/src/main/res/layout/item_bill.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_content_list.xml" value="0.12166172106824925" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.31979166666666664" />
         <entry key="app/src/main/res/layout/v_layout_toast.xml" value="0.3203125" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54__brightnessh.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_back.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_brightnessl.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_close.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_next.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_return.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_search.xml" value="0.1995" />
       </map>
     </option>
   </component>

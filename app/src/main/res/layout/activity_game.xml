@@ -7,10 +7,10 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.tmec.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".GameActivity">
+        tools:context=".activity.GameActivity">
 
         <Button
             android:id="@+id/btn_start"
@@ -44,5 +44,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_start" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.tmec.common.sdk.base.BaseConstraintLayout>
 </layout>

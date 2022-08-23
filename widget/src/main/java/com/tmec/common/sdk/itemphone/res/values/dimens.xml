@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="tmec_item_phone_height">120px</dimen>
-    <dimen name="tmec_item_phone_left_size">64px</dimen>
-    <dimen name="tmec_item_phone_margin">36px</dimen>
-    <dimen name="tmec_item_phone_margin_right">18px</dimen>
-    <dimen name="tmec_item_phone_number_height">68px</dimen>
-    <dimen name="tmec_item_phone_number_margin_left">134px</dimen>
-</resources>

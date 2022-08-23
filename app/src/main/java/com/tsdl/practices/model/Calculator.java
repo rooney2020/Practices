@@ -2,9 +2,9 @@ package com.tsdl.practices.model;
 
 import androidx.annotation.NonNull;
 
+import com.tsdl.common.util.LogUtils;
 import com.tsdl.practices.exception.CalculateException;
 import com.tsdl.practices.util.Constants;
-import com.tsdl.practices.util.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
 
     <application
+        android:name="BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,33 +15,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".AccountActivity"
+            android:name=".activity.AccountActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
 
-        <service android:name=".service.MusicService" />
+        <service
+            android:name=".service.MusicService"
+            android:configChanges="uiMode" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.SmsActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
         <activity
-            android:name=".MusicActivity"
+            android:name=".activity.MusicActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
 
         <meta-data
             android:name="ScopedStorage"
+            android:configChanges="uiMode"
             android:value="true" />
 
         <activity
-            android:name=".GameActivity"
+            android:name=".activity.GameActivity"
             android:exported="false" />
         <activity
-            android:name=".KotlinActivity"
+            android:name=".activity.KotlinActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
         <activity
-            android:name=".CalculatorActivity"
+            android:name=".activity.CalculatorActivity"
+            android:configChanges="uiMode"
             android:exported="false" />
         <activity
-            android:name=".SmsActivity"
+            android:name=".activity.MainActivity"
+            android:configChanges="uiMode"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

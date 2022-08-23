@@ -7,36 +7,38 @@
 
     </data>
 
-    <LinearLayout
+    <com.tmec.common.sdk.base.BaseLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".AccountActivity">
+        android:background="@color/app_main_color"
+        tools:context=".activity.AccountActivity">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.tmec.common.sdk.base.BaseConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_30">
 
-            <ImageButton
+            <com.tmec.common.sdk.base.BaseImageView
                 android:id="@+id/btn_back"
                 android:layout_width="@dimen/btn_back_height"
                 android:layout_height="@dimen/btn_back_height"
-                android:background="@drawable/btn_back"
+                android:background="@drawable/ic_icon_54_return"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
+            <com.tmec.common.sdk.base.BaseTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="日常账本"
+                android:textColor="@color/common_icon_color"
                 android:textSize="@dimen/bill_title"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.tmec.common.sdk.base.BaseConstraintLayout>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
@@ -50,5 +52,5 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-    </LinearLayout>
+    </com.tmec.common.sdk.base.BaseLinearLayout>
 </layout>

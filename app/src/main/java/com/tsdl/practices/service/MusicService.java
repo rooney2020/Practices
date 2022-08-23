@@ -15,9 +15,9 @@ import android.os.IBinder;
 
 import androidx.core.app.NotificationCompat;
 
+import com.tsdl.common.util.LogUtils;
+import com.tsdl.practices.activity.MusicActivity;
 import com.tsdl.practices.R;
-import com.tsdl.practices.MusicActivity;
-import com.tsdl.practices.util.LogUtils;
 
 public class MusicService extends Service {
 

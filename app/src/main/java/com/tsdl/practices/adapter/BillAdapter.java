@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.tmec.common.sdk.base.SingleToast;
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.ItemBillBinding;
 import com.tsdl.practices.manager.DataManager;
@@ -71,7 +72,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
 
         holder.itemView.setOnClickListener(view -> {
             Bill demo = data[holder.getAdapterPosition()];
-            Toast.makeText(mContext, DataManager.getBillTypeById(demo.getType()).getName() + " "
+            SingleToast.makeText(mContext, DataManager.getBillTypeById(demo.getType()).getName() + " "
                     + demo.getAmount(), Toast.LENGTH_SHORT).show();
         });
 

@@ -11,6 +11,8 @@
     <color name="light_gary">#44888888</color>
     <color name="transparent">#00000000</color>
 
+    <color name="app_main_color">#FFFFFFFF</color>
+
     <color name="text_color_income">#6BD26B</color>
     <color name="text_color_outcome">#F35858</color>
 </resources>

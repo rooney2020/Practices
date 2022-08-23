@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="45dp"
+    android:height="45dp"
+    android:viewportWidth="68"
+    android:viewportHeight="68">
+  <path
+      android:pathData="M34,34m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/common_icon_color"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M35,54L35,58L33,58L33,54L35,54ZM58,33L58,35L54,35L54,33L58,33ZM14,33L14,35L10,35L10,33L14,33ZM35,10L35,14L33,14L33,10L35,10Z"
+      android:strokeWidth="1"
+      android:fillColor="@color/common_icon_color"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M20.565,48.849L17.737,51.678L16.322,50.263L19.151,47.435L20.565,48.849ZM51.678,50.263L50.263,51.678L47.435,48.849L48.849,47.435L51.678,50.263ZM20.565,19.151L19.151,20.565L16.322,17.737L17.737,16.322L20.565,19.151ZM51.678,17.737L48.849,20.565L47.435,19.151L50.263,16.322L51.678,17.737Z"
+      android:strokeWidth="1"
+      android:fillColor="@color/common_icon_color"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M33,28l2,0l0,12l-2,0z"
+      android:strokeWidth="1"
+      android:fillColor="@color/common_icon_color"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M40,33l-0,2l-12,0l-0,-2z"
+      android:strokeWidth="1"
+      android:fillColor="@color/common_icon_color"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+</vector>

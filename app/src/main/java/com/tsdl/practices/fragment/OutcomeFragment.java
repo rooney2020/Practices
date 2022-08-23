@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import com.tmec.common.sdk.base.SingleToast;
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.FragmentOutcomeBinding;
 
@@ -24,10 +24,9 @@ public class OutcomeFragment extends Fragment implements View.OnClickListener {
 
     private void initView() {
         mBinding.etAmount.clearFocus();
-        mBinding.btnTest.setOnClickListener(this);
         mBinding.etAmount.setOnClickListener((v) -> {
 
-            Toast.makeText(getContext(), "etAmount onclick", Toast.LENGTH_SHORT).show();
+            SingleToast.makeText(getContext(), "etAmount onclick", SingleToast.LENGTH_SHORT).show();
             if (!mBinding.etAmount.isInputMethodTarget()) {
                 mBinding.etAmount.clearFocus(); // ...other actions
             }
@@ -43,6 +42,6 @@ public class OutcomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(getContext(), "fragment onclick", Toast.LENGTH_SHORT).show();
+        SingleToast.makeText(getContext(), "fragment onclick", SingleToast.LENGTH_SHORT).show();
     }
 }

@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Practices"
 include ':app'
 include ':widget'
-
+include ':common'

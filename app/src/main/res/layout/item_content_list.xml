@@ -6,18 +6,20 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.tmec.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_color">
 
-        <TextView
+        <com.tmec.common.sdk.base.BaseTextView
             android:id="@+id/tv_item_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:textColor="@color/common_icon_color"
             android:textSize="18sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.tmec.common.sdk.base.BaseConstraintLayout>
 </layout>
