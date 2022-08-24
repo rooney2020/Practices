@@ -25,7 +25,7 @@ public class DataManager {
     private final SQLiteDatabase mSQLiteDatabase;
 
     private DataManager(Context context) {
-        DataBaseManager mDataBaseManager = new DataBaseManager(context, Constants.DATABASE_NAME, null, 7);
+        DataBaseManager mDataBaseManager = new DataBaseManager(context, Constants.DATABASE_NAME, null, 1);
         mSQLiteDatabase = mDataBaseManager.getWritableDatabase();
 
         if (mIsInit || isInit(context)) {
@@ -181,6 +181,7 @@ public class DataManager {
                 new BillType(context.getString(R.string.type_car), R.drawable.bt_car, false),
                 new BillType(context.getString(R.string.type_telephone_bill), R.drawable.bt_money, false),
                 new BillType(context.getString(R.string.type_parent), R.drawable.bt_household, false),
+
                 new BillType(context.getString(R.string.type_salary), R.drawable.bt_salary, true),
                 new BillType(context.getString(R.string.type_red_packet), R.drawable.bt_hongbao, true),
                 new BillType(context.getString(R.string.type_reimbursement), R.drawable.bt_reimbursement, true),
@@ -197,14 +198,14 @@ public class DataManager {
 
     public synchronized void insertBill() {
         Bill[] bills = new Bill[]{
-                new Bill("今天", -73.3f),
-                new Bill(8, 35.3f, "凉糕", "2022-08-04 12:24:38"),
-                new Bill(1, 38f, "凉皮鸡架", "2022-08-04 12:06:08"),
-                new Bill("昨天", -27.7f),
-                new Bill(8, 27.7f, "鸭货", "2022-08-03 19:13:19"),
-                new Bill("2日", 9989.7f),
+                new Bill("今天", -73.30f),
+                new Bill(8, -35.3f, "凉糕", "2022-08-04 12:24:38"),
+                new Bill(1, -38f, "凉皮鸡架", "2022-08-04 12:06:08"),
+                new Bill("昨天", -27.70f),
+                new Bill(8, -27.7f, "鸭货", "2022-08-03 19:13:19"),
+                new Bill("2日", 9989.70f),
                 new Bill(16, 10000f, "7月份工资", "2022-08-02 21:43:58"),
-                new Bill(7, 10.3f, "其他物品", "2022-08-02 20:21:32")
+                new Bill(7, -10.3f, "其他物品", "2022-08-02 20:21:32")
         };
         for (Bill bill : bills) {
             if (!bill.isDate()) {

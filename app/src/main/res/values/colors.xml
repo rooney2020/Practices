@@ -13,6 +13,15 @@
 
     <color name="app_main_color">#FFFFFFFF</color>
 
+    <color name="icon_other">#626262</color>
+    <color name="icon_other_income">#999999</color>
+    <color name="icon_traffic">#969696</color>
+
+    <color name="bg_income_start">#D4F8DA</color>
+    <color name="bg_income_end">#FFFFFF</color>
+    <color name="bg_outcome_start">#FFFFFF</color>
+    <color name="bg_outcome_end">#F6BBBB</color>
+
     <color name="text_color_income">#6BD26B</color>
     <color name="text_color_outcome">#F35858</color>
 </resources>

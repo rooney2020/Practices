@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.tmec.common.sdk.base.BaseConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.TabLayoutActivity"
+        android:background="@color/app_main_color">
+
+        <com.tmec.common.sdk.tab.BaseScrollTabItemLayout
+            android:id="@+id/item_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hryt_scrollTabItemChildEnable="true"
+            app:hryt_scrollTabItemItemType="text"
+            app:hryt_scrollTabItemOrientation="horizontal" />
+
+    </com.tmec.common.sdk.base.BaseConstraintLayout>
+</layout>

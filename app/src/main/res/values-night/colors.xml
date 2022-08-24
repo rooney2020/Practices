@@ -2,4 +2,13 @@
 <resources>
 
     <color name="app_main_color">#000000</color>
+
+    <color name="icon_other">#FFFFFF</color>
+    <color name="icon_other_income">#FFFFFF</color>
+    <color name="icon_traffic">#FFFFFF</color>
+
+    <color name="bg_income_start">#012724</color>
+    <color name="bg_income_end">#064741</color>
+    <color name="bg_outcome_start">#690909</color>
+    <color name="bg_outcome_end">#421709</color>
 </resources>

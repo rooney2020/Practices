@@ -12,33 +12,50 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_20"
         android:layout_marginBottom="@dimen/margin_20"
-        android:background="@color/app_main_color"
+        android:background="@android:color/transparent"
         android:orientation="horizontal"
         android:padding="@dimen/margin_5dp">
 
         <com.tmec.common.sdk.base.BaseTextView
             android:id="@+id/tv_date"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_30"
+            android:gravity="center"
+            android:textColor="@color/common_icon_color"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_icon_date"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="今天" />
+
+        <com.tmec.common.sdk.base.BaseTextView
+            android:id="@+id/tv_date_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30"
             android:layout_marginTop="@dimen/margin_20"
             android:gravity="center"
             android:textColor="@color/common_icon_color"
             android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_date"
             app:layout_constraintTop_toTopOf="parent"
-            tool:text="今天 -73.30" />
+            tool:text="-73.30" />
 
         <com.tmec.common.sdk.base.BaseLinearLayout
             android:id="@+id/layout_left"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_30"
             android:gravity="end"
             android:orientation="horizontal"
             android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/iv_icon"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.tmec.common.sdk.base.BaseLinearLayout
                 android:layout_width="wrap_content"
@@ -84,26 +101,48 @@
         </com.tmec.common.sdk.base.BaseLinearLayout>
 
         <com.tmec.common.sdk.base.BaseImageView
-            android:id="@+id/iv_icon"
-            android:layout_width="@dimen/bill_type_icon_height"
-            android:layout_height="@dimen/bill_type_icon_height"
-            android:background="@drawable/bg_icon"
-            android:padding="@dimen/margin_10"
+            android:id="@+id/iv_icon_date"
+            android:layout_width="@dimen/bill_date_icon_height"
+            android:layout_height="@dimen/bill_date_icon_height"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/common_icon_color"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tmec.common.sdk.base.BaseImageView
+            android:id="@+id/iv_icon_bg"
+            android:layout_width="@dimen/bill_type_icon_bg_height"
+            android:layout_height="@dimen/bill_type_icon_bg_height"
+            android:background="@drawable/bg_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tmec.common.sdk.base.BaseImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/bill_type_icon_height"
+            android:layout_height="@dimen/bill_type_icon_height"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_bg"
+            app:layout_constraintEnd_toEndOf="@id/iv_icon_bg"
+            app:layout_constraintStart_toStartOf="@id/iv_icon_bg"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_bg"
             tool:src="@drawable/icon_type_snack" />
 
         <com.tmec.common.sdk.base.BaseLinearLayout
             android:id="@+id/layout_right"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_30"
             android:orientation="horizontal"
             android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/iv_icon">
+            app:layout_constraintStart_toEndOf="@id/iv_icon"
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.tmec.common.sdk.base.BaseLinearLayout
                 android:layout_width="wrap_content"

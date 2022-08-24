@@ -4,12 +4,10 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import com.tmec.common.sdk.R;
 import com.tmec.common.sdk.core.SkinManager;
@@ -53,10 +51,14 @@ public class BaseImageView extends ImageView {
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
-    protected void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
+    public void setImageResource(int resId) {
+        mSrcResId = resId;
+        updateImage();
+    }
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    private void updateImage() {
         if (mSrcResId != 0) {
             try {
                 setImageDrawable(SkinManager.getInstance().getDrawable(getContext(), mSrcResId));
@@ -71,5 +73,11 @@ public class BaseImageView extends ImageView {
 
             }
         }
+    }
+
+    @Override
+    protected void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        updateImage();
     }
 }

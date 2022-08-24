@@ -9,7 +9,9 @@
     <dimen name="bill_top_height_180">180px</dimen>
     <dimen name="btn_back_height">60px</dimen>
     <dimen name="bill_icon_height">120px</dimen>
-    <dimen name="bill_type_icon_height">120px</dimen>
+    <dimen name="bill_type_icon_bg_height">120px</dimen>
+    <dimen name="bill_type_icon_height">90px</dimen>
+    <dimen name="bill_date_icon_height">10px</dimen>
 
     <dimen name="margin_2">2px</dimen>
     <dimen name="margin_10">10px</dimen>

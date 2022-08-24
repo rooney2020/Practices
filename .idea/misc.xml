@@ -58,6 +58,7 @@
         <entry key="app/src/main/res/layout/activity_music.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.31197916666666664" />
         <entry key="app/src/main/res/layout/activity_sms.xml" value="0.30625" />
+        <entry key="app/src/main/res/layout/activity_tab_layout.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.15577507598784193" />
         <entry key="app/src/main/res/layout/fragment_asset.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
@@ -77,6 +78,15 @@
         <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_next.xml" value="0.1995" />
         <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_return.xml" value="0.1995" />
         <entry key="widget/src/main/java/com/tmec/common/sdk/edittext/res/drawable/ic_icon_54_search.xml" value="0.1995" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/ic_hht_setting_2.xml" value="0.1" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/ic_img_tabitem_second_news.xml" value="0.142" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/img_tabitem_second_cuttingline.xml" value="0.137" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/img_tabitem_side_bg.xml" value="0.23" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/img_tabitem_top_bg.xml" value="0.142" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/img_tabitem_top_checked1.xml" value="0.142" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/drawable/scroll_progress_shape.xml" value="0.23" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/layout/layout_horizontal_tabitem.xml" value="0.30625" />
+        <entry key="widget/src/main/java/com/tmec/common/sdk/tab/res/layout/layout_vertical_tabitem.xml" value="0.30625" />
       </map>
     </option>
   </component>

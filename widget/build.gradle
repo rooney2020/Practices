@@ -4,6 +4,7 @@ plugins {
 
 def srcDirs = [
         'com/tmec/common/sdk/base',
+        'com/tmec/common/sdk/tab',
 ]
 android {
     compileSdk 30
@@ -17,6 +18,11 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
     buildTypes {
         release {
             minifyEnabled true

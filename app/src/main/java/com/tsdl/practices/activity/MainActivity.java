@@ -54,7 +54,7 @@ public class MainActivity extends BaseActivity {
             new DemoDetail(R.string.activity_game, R.string.blank, this, GameActivity.class),
             new DemoDetail(R.string.activity_music, R.string.blank, this, MusicActivity.class),
             new DemoDetail(R.string.activity_sms, R.string.blank, this, SmsActivity.class),
-            new DemoDetail(R.string.item_callback, R.string.blank, null),
+            new DemoDetail(R.string.activity_tab_layout, R.string.blank, this, TabLayoutActivity.class),
     };
 
 }

@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".activity.TabLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.AccountActivity"
             android:configChanges="uiMode"
             android:exported="false" />
