@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.tmec.common.sdk.base.SingleToast;
+import com.tsdl.common.sdk.base.SingleToast;
 import com.tsdl.common.util.LogUtils;
 
 public class BaseActivity extends AppCompatActivity {

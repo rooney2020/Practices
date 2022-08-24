@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BaseSound">
+        <attr name="soundEffect" format="enum">
+            <!--  sound effect type  -->
+            <enum name="FX_KEY_NORMAL_REAL_BTN" value="0" />
+            <enum name="FX_KEY_NORMAL_ICON_BTN" value="0" />
+            <enum name="FX_KEY_NORMAL_GHOST_BTN" value="0" />
+            <enum name="FX_KEY_NORMAL_FLAT_BTN" value="0" />
+            <enum name="FX_KEY_NORMAL_TOGGLE_BTN" value="0" />
+            <enum name="FX_KEY_NORMAL_DIALOG" value="0" />
+            <enum name="FX_KEY_NORMAL_POP" value="0" />
+            <enum name="FX_KEY_NORMAL_TAB" value="0" />
+            <enum name="FX_KEY_NORMAL_SEGMENT" value="0" />
+            <enum name="FX_KEY_NORMAL_PICK" value="0" />
+            <enum name="FX_KEY_NORMAL_EDIT" value="0" />
+            <enum name="FX_KEY_NORMAL_SWIP_FRESH_LY" value="0" />
+            <enum name="FX_KEY_NORMAL_CHECK_BOX" value="0" />
+            <enum name="FX_KEY_NORMAL_SWITCH" value="0" />
+            <!--      android view sound effect type-->
+            <enum name="FX_KEY_CLICK" value="0" />
+            <enum name="FX_KEY_TV" value="0" />
+            <enum name="FX_KEY_IMAGE" value="0" />
+            <enum name="FX_KEY_CHECK_BOX" value="0" />
+            <enum name="FX_KEY_SWITCH" value="0" />
+            <enum name="FX_KEY_IMG_BTN" value="0" />
+            <enum name="FX_KEY_RADIO_BTN" value="0" />
+            <enum name="FX_KEY_3D_BTN" value="0" />
+            <enum name="FX_KEY_CUSTOM_VIEW" value="0" />
+            <!--      third sound  effect type-->
+            <enum name="FX_SFK_SUCCESS" value="0" />
+            <enum name="FX_SFK_FAIL" value="0" />
+            <enum name="FX_SFK_CALLING_ONE" value="0" />
+            <enum name="FX_SFK_CALLING_TWO" value="0" />
+            <enum name="FX_SFK_CALLING_THREE" value="0" />
+            <enum name="FX_SFK_CALLING_FOUR" value="0" />
+            <enum name="FX_SFK_CALLING_FIVE" value="0" />
+            <enum name="FX_SFK_CALLING_SIX" value="0" />
+            <enum name="FX_SFK_CALLING_SEVEN" value="0" />
+            <enum name="FX_SFK_CALLING_EIGHT" value="0" />
+            <enum name="FX_SFK_CALLING_NINE" value="0" />
+            <enum name="FX_SFK_CALLING_TEN" value="0" />
+            <enum name="FX_SFK_STAR" value="0" />
+            <enum name="FX_SFK_NUMBER_SIGN" value="0" />
+            <enum name="FX_SFK_CONFIRM" value="0" />
+            <enum name="FX_SFK_DELET" value="0" />
+            <enum name="FX_SFK_AML" value="0" />
+            <enum name="FX_SFK_CALLING_INCOMMING" value="0" />
+            <enum name="FX_SFK_CAMERA" value="0" />
+            <enum name="FX_SFK_IROBOT_ONE" value="0" />
+            <enum name="FX_SFK_IROBOT_TWO" value="0" />
+            <enum name="FX_SFK_SCENE_TWO" value="0" />
+            <enum name="FX_SFK_SCENE_ONE" value="0" />
+            <enum name="FX_SFK_IROBOT_THREE" value="0" />
+            <enum name="FX_SFK_SYS_WAR_H" value="0" />
+            <enum name="FX_SFK_SYS_WAR_M" value="0" />
+            <enum name="FX_SFK_SYS_WAR_L" value="0" />
+            <enum name="FX_SFK_VOICE_RECOG_ONE" value="0" />
+            <enum name="FX_SFK_VOICE_RECOG_TWO" value="0" />
+            <enum name="FX_SFK_WAKEUP" value="0" />
+            <enum name="FX_KEY_NOTIFICATION" value="0" />
+        </attr>
+    </declare-styleable>
+
+</resources>

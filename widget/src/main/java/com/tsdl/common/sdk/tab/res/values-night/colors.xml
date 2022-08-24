@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cbox_mark_unchecked_color">#00000000</color>
+    <color name="segmented_item_text_color">#4D4E4F</color>
+    <color name="assist_content_color">#FF929292</color>
+    <color name="segmented_default_text_color">#4D4E4F</color>
+    <color name="main_content_color">#FFFFFFFF</color>
+    <color name="tabItem_check_bg">#FFCED2DD</color>
+    <color name="main_color_normal">#FFDC753C</color>
+    <color name="common_black">#000000</color>
+    <color name="tabItem_horizon_check_bg">#33C6CBD4</color>
+    <color name="tabItem_horizon_check_bg1">#99C6CBD4</color>
+    <color name="tabItem_horizon_check_bg2">#CCC6CBD4</color>
+    <color name="tabItem_vertical_bg">#3A3C41</color>
+    <color name="tabItem_vertical_check_bg">#FF4A4B4D</color>
+    <color name="tabItem_vertical_check_bg1">#004B4F53</color>
+    <color name="icon_setting_color">#FF929292</color>
+    <color name="icon_color">#FFFFFF</color>
+</resources>

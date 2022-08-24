@@ -47,11 +47,11 @@ public <init> (android.content.Context);
 public <init> (android.content.Context,android.util.AttributeSet);
 public <init> (android.content.Context,android.util.AttributeSet,int);
 }
--keep class com.tmec.common.sdk.grouphead.** {*;}
--keep class com.tmec.common.sdk.tablayout.** {*;}
+-keep class com.tsdl.common.sdk.grouphead.** {*;}
+-keep class com.tsdl.common.sdk.tablayout.** {*;}
 
--keep class com.tmec.common.sdk.toast.** {*;}
--keep class com.tmec.common.sdk.popup.** {*;}
--keep class com.tmec.common.sdk.viewtext.** {*;}
--keep class com.tmec.common.sdk.core.SkinManager {*;}
+-keep class com.tsdl.common.sdk.toast.** {*;}
+-keep class com.tsdl.common.sdk.popup.** {*;}
+-keep class com.tsdl.common.sdk.viewtext.** {*;}
+-keep class com.tsdl.common.sdk.core.SkinManager {*;}
 -keep class ** {*;}

@@ -1,8 +1,10 @@
 package com.tsdl.practices.activity;
 
 import android.annotation.SuppressLint;
+import android.content.res.Configuration;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
@@ -85,5 +87,11 @@ public class SmsActivity extends BaseActivity implements ViewPager.OnPageChangeL
     @Override
     public void onPageScrollStateChanged(int state) {
 
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        updatePageIcon(mBinding.tabLayout.getSelectedTabPosition());
     }
 }

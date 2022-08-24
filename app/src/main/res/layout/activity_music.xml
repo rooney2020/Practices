@@ -7,7 +7,7 @@
 
     </data>
 
-    <com.tmec.common.sdk.base.BaseConstraintLayout
+    <com.tsdl.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.MusicActivity">
@@ -44,5 +44,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bind_service_btn" />
 
-    </com.tmec.common.sdk.base.BaseConstraintLayout>
+    </com.tsdl.common.sdk.base.BaseConstraintLayout>
 </layout>

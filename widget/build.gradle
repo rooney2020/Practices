@@ -3,8 +3,10 @@ plugins {
 }
 
 def srcDirs = [
-        'com/tmec/common/sdk/base',
-        'com/tmec/common/sdk/tab',
+        'com/tsdl/common/sdk/base',
+        'com/tsdl/common/sdk/tab',
+        'com/tsdl/common/sdk/scroll',
+        'com/tsdl/common/sdk/sound',
 ]
 android {
     compileSdk 30

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright © 2019-2020 Human Horizons (Shanghai) Cloud Computing Technology Co., Ltd. All Rights Reserved.
+-->
+<resources>
+    <style name="DefaultTabItem">
+        <item name="android:height">@dimen/tab_item_height</item>
+        <item name="android:width">@dimen/tab_item_width</item>
+        <item name="android:minHeight">@dimen/tab_item_height</item>
+        <item name="android:minWidth">@dimen/tab_item_width</item>
+        <item name="checkedItemColor">@null</item>
+        <item name="tabItemNormalBackgroundTint">@color/tabItem_vertical_bg</item>
+        <item name="tabItemTopBackgroundTint">@color/tabItem_top_bg</item>
+        <item name="tabItemCheckBackgroundTint">@color/tabItem_check_bg</item>
+        <item name="topCheckDrawable">@drawable/img_tabitem_top_checked1</item>
+        <!--check color-->
+        <item name="tabItemCheckTint">@color/main_color_normal</item>
+        <item name="tabItemItemDrawable">@null</item>
+        <item name="tabItemTopBgDrawable">@drawable/img_tabitem_top_bg</item>
+        <item name="tabItemVerticalItemDrawable">@drawable/img_tabitem_side_checked2</item>
+        <item name="tabItemTopCheckTint">@color/tabItem_check_bg</item>
+
+        <!--item whole text's color-->
+        <item name="tabItemTextColor">@color/assist_content_color</item>
+
+        <!--item select text's color-->
+        <item name="tabItemSelectedTextColor">@color/main_content_color</item>
+    </style>
+
+
+    <declare-styleable name="BaseTabItemLayout">
+        <!--set view check item drawable-->
+        <attr name="checkedItemColor" format="reference" />
+        <attr name="topCheckDrawable" format="reference" />
+        <attr name="tabItemTopBgDrawable" format="reference" />
+        <!--tint-->
+        <attr name="tabItemNormalBackgroundTint" format="reference" />
+        <attr name="tabItemCheckBackgroundTint" format="reference" />
+        <attr name="tabItemTopCheckTint" format="reference" />
+        <attr name="tabItemTopBackgroundTint" format="reference" />
+        <attr name="tabItemCheckTint" format="reference" />
+        <attr name="tabItemVerticalItemDrawable" format="reference" />
+        <!--set view item drawable -->
+        <attr name="tabItemItemDrawable" format="reference" />
+        <!--item radius-->
+        <attr name="tabItemRadius" format="dimension|reference" />
+
+        <!--item whole background's color-->
+        <attr name="tabItemOuterColor" format="color" />
+
+        <!--item item background's color-->
+        <attr name="tabItemItemColor" format="color" />
+
+        <!--item whole text's color-->
+        <attr name="tabItemTextColor" format="color" />
+
+        <!--item whole text's disable color-->
+        <attr name="tabItemDisableTextColor" format="color" />
+
+        <!--item select text's color-->
+        <attr name="tabItemSelectedTextColor" format="color" />
+
+        <!--item whole text's size-->
+        <attr name="tabItemTextSize" format="dimension|reference" />
+
+        <!--item select text's size-->
+        <attr name="tabItemSelectTextSize" format="dimension|reference" />
+
+        <!--add item -->
+        <attr name="tabItemAddItems" format="reference" />
+
+        <!--set select item -->
+        <attr name="tabItemSelectedItem" format="integer" />
+
+        <!--set view can abable -->
+        <attr name="tabItemEnabled" format="boolean" />
+
+        <!--set view can scroll -->
+        <attr name="tabItemScrollEnable" format="boolean" />
+
+        <!--set view bg drawable -->
+        <attr name="tabItemBgDrawable" format="reference" />
+
+        <!--set view mode horizontal or vertical -->
+        <attr name="tabItemOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <!--set child type -->
+        <attr name="tabItemChildEnable" format="boolean" />
+        <!--set view mode round or circle -->
+        <attr name="tabItemMode" format="enum">
+            <enum name="Round" value="0" />
+            <enum name="Circle" value="1" />
+        </attr>
+
+        <!--item padding left and right-->
+        <attr name="tabItemMarginLeft" format="dimension|reference" />
+
+        <attr name="tabItemRedPointPosition" format="integer" />
+        <attr name="tabItemRedPointShow" format="boolean" />
+        <!--item padding top and bottom-->
+        <attr name="tabItemMarginTop" format="dimension|reference" />
+
+        <attr name="tabItemOnClickBeforeAnimation" format="boolean" />
+
+
+        <!--set view can scroll -->
+        <attr name="tabItemDefaultBitmap" format="boolean" />
+
+        <!--set item text and image padding -->
+        <attr name="tabItemTextAndImagePadding" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="BaseScrollTabItemLayout">
+        <!--set view can abable -->
+        <attr name="scrollTabItemEnabled" format="boolean" />
+
+        <!--set view mode horizontal or vertical -->
+        <attr name="scrollTabItemOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="scrollTabItemItemType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="icon_text" value="1" />
+        </attr>
+
+        <!--set child type -->
+        <attr name="scrollTabItemChildEnable" format="boolean" />
+        <attr name="scrollTabItemItemWidth" format="dimension" />
+        <!--item whole text's size-->
+        <attr name="scrollTabItemTextSize" format="dimension|reference" />
+
+        <!--item select text's size-->
+        <attr name="scrollTabItemSelectTextSize" format="dimension|reference" />
+
+        <!--item padding left and right-->
+        <attr name="scrollTabItemMarginLeft" format="dimension|reference" />
+
+        <attr name="scrollTabItemRedPointPosition" format="integer" />
+        <attr name="scrollTabItemRedPointShow" format="boolean" />
+
+        <!--item padding top and bottom-->
+        <attr name="scrollTabItemMarginTop" format="dimension|reference" />
+
+        <attr name="scrollTabItemOverScrollMode">
+            <!-- Always show over-scroll effects, even if the content fits entirely
+                 within the available space. -->
+            <enum name="always" value="0" />
+            <!-- Only show over-scroll effects if the content is large
+                 enough to meaningfully scroll. -->
+            <enum name="ifContentScrolls" value="1" />
+            <!-- Never show over-scroll effects. -->
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -36,7 +36,7 @@ public class AccountActivity extends BaseActivity {
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 //        if (mBinding != null) {
-//            mBinding.btnBack.setBackground(getResources().getDrawable(com.tmec.common.sdk.R.drawable.ic_icon_54_return, getTheme()));
+//            mBinding.btnBack.setBackground(getResources().getDrawable(com.tsdl.common.sdk.R.drawable.ic_icon_54_return, getTheme()));
 //        }
     }
 

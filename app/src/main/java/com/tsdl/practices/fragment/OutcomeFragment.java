@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
-import com.tmec.common.sdk.base.SingleToast;
+import com.tsdl.common.sdk.base.SingleToast;
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.FragmentOutcomeBinding;
 

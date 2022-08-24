@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.tmec.common.sdk.base.SingleToast;
+import com.tsdl.common.sdk.base.SingleToast;
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.ItemBillBinding;
 import com.tsdl.practices.manager.DataManager;

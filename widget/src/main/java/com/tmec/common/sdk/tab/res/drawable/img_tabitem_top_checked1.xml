@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="102dp"
-    android:shape="rectangle">
-    <corners android:radius="8px" />
-    <solid android:color="@color/hrty_tabItem_check_bg" />
-</shape>

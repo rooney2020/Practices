@@ -7,7 +7,7 @@
 
     </data>
 
-    <com.tmec.common.sdk.base.BaseLinearLayout
+    <com.tsdl.common.sdk.base.BaseLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -25,5 +25,5 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/page_height"
             app:tabTextAppearance="@style/TabLayoutTextStyle" />
-    </com.tmec.common.sdk.base.BaseLinearLayout>
+    </com.tsdl.common.sdk.base.BaseLinearLayout>
 </layout>

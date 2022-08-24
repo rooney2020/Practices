@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.tmec.common.sdk.base.BaseLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.tsdl.common.sdk.base.BaseLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/margin_5dp"
     android:orientation="vertical">
 
-    <com.tmec.common.sdk.base.BaseImageView
+    <com.tsdl.common.sdk.base.BaseImageView
         android:id="@+id/iv_icon"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1" />
 
-    <com.tmec.common.sdk.base.BaseTextView
+    <com.tsdl.common.sdk.base.BaseTextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,4 +21,4 @@
         android:gravity="center_horizontal"
         android:textSize="@dimen/page_title" />
 
-</com.tmec.common.sdk.base.BaseLinearLayout>
+</com.tsdl.common.sdk.base.BaseLinearLayout>

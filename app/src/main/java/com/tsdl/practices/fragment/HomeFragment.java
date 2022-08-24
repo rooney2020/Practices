@@ -12,7 +12,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.tmec.common.sdk.base.SingleToast;
+import com.tsdl.common.sdk.base.SingleToast;
 import com.tsdl.practices.activity.AccountActivity;
 import com.tsdl.practices.R;
 import com.tsdl.practices.adapter.BillAdapter;

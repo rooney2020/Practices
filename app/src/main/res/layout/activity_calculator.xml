@@ -8,13 +8,13 @@
 
     </data>
 
-    <com.tmec.common.sdk.base.BaseConstraintLayout
+    <com.tsdl.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/app_main_color"
         tools:context=".activity.CalculatorActivity">
 
-        <com.tmec.common.sdk.base.BaseTextView
+        <com.tsdl.common.sdk.base.BaseTextView
             android:id="@+id/btn_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.tmec.common.sdk.base.BaseTextView
+        <com.tsdl.common.sdk.base.BaseTextView
             android:id="@+id/tv_display"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -38,7 +38,7 @@
             app:layout_constraintTop_toBottomOf="@id/btn_more"
             tool:text="@string/app_name" />
 
-        <com.tmec.common.sdk.base.BaseTextView
+        <com.tsdl.common.sdk.base.BaseTextView
             android:id="@+id/tv_result"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -51,7 +51,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_display"
             tool:text="@string/app_name" />
 
-        <com.tmec.common.sdk.base.BaseConstraintLayout
+        <com.tsdl.common.sdk.base.BaseConstraintLayout
             android:id="@+id/btn_region"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -320,7 +320,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/btn_input_point"
                 app:layout_constraintTop_toBottomOf="@id/btn_input_7" />
-        </com.tmec.common.sdk.base.BaseConstraintLayout>
+        </com.tsdl.common.sdk.base.BaseConstraintLayout>
 
-    </com.tmec.common.sdk.base.BaseConstraintLayout>
+    </com.tsdl.common.sdk.base.BaseConstraintLayout>
 </layout>

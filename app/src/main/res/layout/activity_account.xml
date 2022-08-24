@@ -7,19 +7,19 @@
 
     </data>
 
-    <com.tmec.common.sdk.base.BaseLinearLayout
+    <com.tsdl.common.sdk.base.BaseLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/app_main_color"
         tools:context=".activity.AccountActivity">
 
-        <com.tmec.common.sdk.base.BaseConstraintLayout
+        <com.tsdl.common.sdk.base.BaseConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_30">
 
-            <com.tmec.common.sdk.base.BaseImageView
+            <com.tsdl.common.sdk.base.BaseImageView
                 android:id="@+id/btn_back"
                 android:layout_width="@dimen/btn_back_height"
                 android:layout_height="@dimen/btn_back_height"
@@ -27,7 +27,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.tmec.common.sdk.base.BaseTextView
+            <com.tsdl.common.sdk.base.BaseTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="日常账本"
@@ -38,7 +38,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </com.tmec.common.sdk.base.BaseConstraintLayout>
+        </com.tsdl.common.sdk.base.BaseConstraintLayout>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
@@ -52,5 +52,5 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-    </com.tmec.common.sdk.base.BaseLinearLayout>
+    </com.tsdl.common.sdk.base.BaseLinearLayout>
 </layout>

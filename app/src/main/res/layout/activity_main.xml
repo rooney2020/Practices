@@ -7,7 +7,7 @@
 
     </data>
 
-    <com.tmec.common.sdk.base.BaseConstraintLayout
+    <com.tsdl.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
@@ -23,5 +23,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-    </com.tmec.common.sdk.base.BaseConstraintLayout>
+    </com.tsdl.common.sdk.base.BaseConstraintLayout>
 </layout>

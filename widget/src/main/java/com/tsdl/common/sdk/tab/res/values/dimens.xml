@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="segmented_selected_text_dimen">21dp</dimen>
+    <dimen name="segmented_normal_text_dimen">21dp</dimen>
+
+
+    <dimen name="tab_item_width">228dp</dimen>
+    <dimen name="tab_item_height">100dp</dimen>
+    <dimen name="tabItem_item_margin">2dp</dimen>
+    <dimen name="tabItem_item_shadow_margin">2dp</dimen>
+    <dimen name="tabItem_text_image_padding">9dp</dimen>
+    <dimen name="tabItem_vertical_padding">0dp</dimen>
+    <dimen name="tabItem_vertical_top_bottom_padding">5dp</dimen>
+    <dimen name="tabItem_horizontal_left_padding">3dp</dimen>
+    <dimen name="tabItem_horizontal_padding">0dp</dimen>
+    <dimen name="tabItem_default_height">68dp</dimen>
+    <dimen name="tabItem_default_width">197dp</dimen>
+    <dimen name="tabItem_vertical_default_height">86dp</dimen>
+</resources>

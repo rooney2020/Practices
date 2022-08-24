@@ -7,12 +7,12 @@
 
     </data>
 
-    <com.tmec.common.sdk.base.BaseConstraintLayout
+    <com.tsdl.common.sdk.base.BaseConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/app_main_color">
 
-        <com.tmec.common.sdk.base.BaseLinearLayout
+        <com.tsdl.common.sdk.base.BaseLinearLayout
             android:id="@+id/bill_top"
             android:layout_width="match_parent"
             android:layout_height="@dimen/bill_top_height_250"
@@ -21,14 +21,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.tmec.common.sdk.base.BaseLinearLayout
+            <com.tsdl.common.sdk.base.BaseLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/bill_top_height_180"
                 android:padding="@dimen/margin_20"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.tmec.common.sdk.base.BaseTextView
+                <com.tsdl.common.sdk.base.BaseTextView
                     android:id="@+id/tv_type_name"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -52,9 +52,9 @@
                     android:textColorHint="@color/gary"
                     android:textSize="28sp" />
 
-            </com.tmec.common.sdk.base.BaseLinearLayout>
+            </com.tsdl.common.sdk.base.BaseLinearLayout>
 
-            <com.tmec.common.sdk.base.BaseLinearLayout
+            <com.tsdl.common.sdk.base.BaseLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal" >
@@ -74,9 +74,9 @@
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="@id/bill_top" />
 
-            </com.tmec.common.sdk.base.BaseLinearLayout>
+            </com.tsdl.common.sdk.base.BaseLinearLayout>
 
-        </com.tmec.common.sdk.base.BaseLinearLayout>
+        </com.tsdl.common.sdk.base.BaseLinearLayout>
 
-    </com.tmec.common.sdk.base.BaseConstraintLayout>
+    </com.tsdl.common.sdk.base.BaseConstraintLayout>
 </layout>
