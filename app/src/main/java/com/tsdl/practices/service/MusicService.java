@@ -9,6 +9,7 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
 import android.os.Binder;
 import android.os.IBinder;
@@ -16,12 +17,15 @@ import android.os.IBinder;
 import androidx.core.app.NotificationCompat;
 
 import com.tsdl.common.util.LogUtils;
-import com.tsdl.practices.activity.MusicActivity;
 import com.tsdl.practices.R;
+import com.tsdl.practices.activity.MusicActivity;
+import com.tsdl.practices.receiver.SmsReceiver;
 
 public class MusicService extends Service {
 
     public static final String TAG = MusicService.class.getSimpleName();
+    public static final String SMS_RECEIVED_ACTION = "android.provider.Telephony.SMS_RECEIVED";
+
     private final MusicBinder mBinder = new MusicBinder();
 
     public MusicService() {
@@ -48,6 +52,10 @@ public class MusicService extends Service {
                 .setContentIntent(pi)
                 .build();
         startForeground(1, notification);
+        SmsReceiver smsReceiver = new SmsReceiver();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(SMS_RECEIVED_ACTION);
+        registerReceiver(smsReceiver, filter);
     }
 
     @Override

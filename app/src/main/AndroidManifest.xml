@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tsdl.practices">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
@@ -16,7 +18,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".activity.TabLayoutActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:process=":remote"/>
         <activity
             android:name=".activity.AccountActivity"
             android:configChanges="uiMode"
@@ -24,7 +27,7 @@
 
         <service
             android:name=".service.MusicService"
-            android:configChanges="uiMode" />
+            android:configChanges="uiMode"/>
 
         <activity
             android:name=".activity.SmsActivity"

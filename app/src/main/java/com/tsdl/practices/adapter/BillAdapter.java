@@ -56,9 +56,14 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
                 binding.ivIconDate.setVisibility(View.VISIBLE);
                 binding.ivIconBg.setVisibility(View.GONE);
                 binding.ivIcon.setVisibility(View.GONE);
+                binding.layoutRight.setVisibility(View.GONE);
+                binding.layoutLeft.setVisibility(View.GONE);
                 binding.tvDate.setText(bill.getDate());
                 binding.tvDateAmount.setText(String.valueOf(bill.getTotalAmount()));
             } else {
+                binding.tvDate.setVisibility(View.GONE);
+                binding.tvDateAmount.setVisibility(View.GONE);
+                binding.ivIconDate.setVisibility(View.GONE);
                 binding.ivIcon.setImageResource(DataManager.getBillTypeById(bill.getType()).getIconId());
                 if (!DataManager.getBillTypeById(bill.getType()).isIncome()) {
                     binding.layoutRight.setVisibility(View.VISIBLE);
@@ -76,8 +81,12 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
 
         holder.itemView.setOnClickListener(view -> {
             Bill demo = data[holder.getAdapterPosition()];
-            SingleToast.makeText(mContext, DataManager.getBillTypeById(demo.getType()).getName() + " "
-                    + demo.getAmount(), Toast.LENGTH_SHORT).show();
+            if (demo.isDate()) {
+                SingleToast.makeText(mContext, demo.getDate() + " " + demo.getAmount(), Toast.LENGTH_SHORT).show();
+            } else {
+                SingleToast.makeText(mContext, DataManager.getBillTypeById(demo.getType()).getName() + " "
+                        + demo.getAmount(), Toast.LENGTH_SHORT).show();
+            }
         });
 
     }

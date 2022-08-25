@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         updateBill();
     }
 
-    private void updateBill() {
+    public void updateBill() {
         Bill[] bills = DataManager.getsInstance(getContext()).queryDailyAmountAndBill();
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         BillAdapter billAdapter = new BillAdapter(getContext(), bills);
