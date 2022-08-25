@@ -18,7 +18,7 @@ public class SmsReceiver extends BroadcastReceiver {
     public static final String KEYWORD_BANK_1 = "[建设银行]";
     public static final String KEYWORD_BANK_2 = "【招商银行】";
     public static final String KEYWORD_TYPE_INCOME_1 = "存入人民币";
-    public static final String KEYWORD_TYPE_OUTCOME_1 = "消费支出人民币";
+    public static final String KEYWORD_TYPE_OUTCOME_1 = "支出人民币";
     public static final String KEYWORD_TYPE_INCOME_2 = "入账";
     public static final String KEYWORD_TYPE_INCOME_3 = "实时转入";
     public static final String KEYWORD_TYPE_OUTCOME_2 = "扣款";
