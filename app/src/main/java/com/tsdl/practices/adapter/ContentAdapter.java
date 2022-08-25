@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.ItemContentListBinding;
 import com.tsdl.practices.model.DemoDetail;
-import com.tsdl.practices.util.Constants;
+import com.tsdl.common.util.Constants;
 
 public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentViewHolder> {
 

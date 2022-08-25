@@ -12,13 +12,13 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.tsdl.common.entity.Bill;
 import com.tsdl.common.sdk.base.SingleToast;
-import com.tsdl.practices.activity.AccountActivity;
 import com.tsdl.practices.R;
+import com.tsdl.practices.activity.AccountActivity;
 import com.tsdl.practices.adapter.BillAdapter;
 import com.tsdl.practices.databinding.FragmentHomeBinding;
 import com.tsdl.practices.manager.DataManager;
-import com.tsdl.practices.model.Bill;
 
 import java.util.Calendar;
 
@@ -42,6 +42,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         mBinding.tvIncomeAmount.setText(String.format("%.2f", 10000f));
         mBinding.tvOutcomeAmount.setText(String.format("%.2f", 111.3f));
 
+        updateBill();
+    }
+
+    private void updateBill() {
         Bill[] bills = DataManager.getsInstance(getContext()).queryDailyAmountAndBill();
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         BillAdapter billAdapter = new BillAdapter(getContext(), bills);
@@ -54,6 +58,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
         initView();
         return mBinding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateBill();
     }
 
     @Override

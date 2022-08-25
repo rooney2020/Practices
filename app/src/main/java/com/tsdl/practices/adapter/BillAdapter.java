@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.tsdl.common.entity.Bill;
 import com.tsdl.common.sdk.base.SingleToast;
 import com.tsdl.practices.R;
 import com.tsdl.practices.databinding.ItemBillBinding;
 import com.tsdl.practices.manager.DataManager;
-import com.tsdl.practices.model.Bill;
 
 public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder> {
 

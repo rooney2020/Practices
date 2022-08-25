@@ -8,10 +8,10 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.tsdl.common.entity.Bill;
+import com.tsdl.common.entity.BillType;
+import com.tsdl.common.util.Constants;
 import com.tsdl.practices.R;
-import com.tsdl.practices.model.Bill;
-import com.tsdl.practices.model.BillType;
-import com.tsdl.practices.util.Constants;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -153,6 +153,16 @@ public class DataManager {
         return mBillTypes;
     }
 
+    public synchronized List<BillType> getBillTypeListByType(boolean isIncome) {
+        List<BillType> list = new ArrayList<>();
+        for (BillType type : mBillTypes) {
+            if (isIncome == type.isIncome()) {
+                list.add(type);
+            }
+        }
+        return list;
+    }
+
     public static Bill[] toArray(List<Bill> bills) {
         if (bills == null) {
             return null;
@@ -211,6 +221,12 @@ public class DataManager {
             if (!bill.isDate()) {
                 mSQLiteDatabase.insert(Constants.TABLE_BILL, null, bill.getCreateSql());
             }
+        }
+    }
+
+    public void insertBill(Bill bill) {
+        if (bill != null) {
+            mSQLiteDatabase.insert(Constants.TABLE_BILL, null, bill.getCreateSql());
         }
     }
 

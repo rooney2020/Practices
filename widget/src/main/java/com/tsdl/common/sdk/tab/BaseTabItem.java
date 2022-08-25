@@ -145,7 +145,7 @@ public class BaseTabItem {
     /**
      * if item is image to git item image background.
      *
-     * @return Drawable the item back drawable
+     * @return Drawable the item back layout
      */
     public Drawable getBackDrawable() {
         return mBackDrawable;
@@ -155,7 +155,7 @@ public class BaseTabItem {
      * if item is image to git item image background.
      *
      * @param context context
-     * @return Drawable the item back drawable
+     * @return Drawable the item back layout
      */
     @SuppressLint("UseCompatLoadingForDrawables")
     public Drawable getBackDrawable(Context context) {
@@ -172,7 +172,7 @@ public class BaseTabItem {
      * if item is image to git item image background.
      *
      * @param resources Resources
-     * @return Drawable the item back drawable
+     * @return Drawable the item back layout
      */
     @SuppressLint("UseCompatLoadingForDrawables")
     public Drawable getBackDrawable(Resources resources) {
@@ -188,7 +188,7 @@ public class BaseTabItem {
     /**
      * if item is image to set item image background.
      *
-     * @param backDrawable Drawable the item back drawable
+     * @param backDrawable Drawable the item back layout
      */
     public void setBackDrawable(Drawable backDrawable) {
         this.mBackDrawable = backDrawable;
@@ -240,7 +240,7 @@ public class BaseTabItem {
     /**
      * if item is image to set item image select.
      *
-     * @param itemDrawable the item drawable
+     * @param itemDrawable the item layout
      */
     public void setItemDrawable(Drawable itemDrawable) {
         this.mItemDrawable = itemDrawable;
@@ -249,7 +249,7 @@ public class BaseTabItem {
     /**
      * if item is image to git item image disable
      *
-     * @return Drawable the item drawable
+     * @return Drawable the item layout
      */
     public Drawable getDisableDrawable() {
         return mDisableDrawable;
@@ -259,7 +259,7 @@ public class BaseTabItem {
      * if item is image to git item image disable
      *
      * @param context Context
-     * @return Drawable the item drawable
+     * @return Drawable the item layout
      */
     @SuppressLint("UseCompatLoadingForDrawables")
     public Drawable getDisableDrawable(Context context) {
@@ -276,7 +276,7 @@ public class BaseTabItem {
      * if item is image to git item image disable
      *
      * @param resources Resources
-     * @return Drawable the item drawable
+     * @return Drawable the item layout
      */
     @SuppressLint("UseCompatLoadingForDrawables")
     public Drawable getDisableDrawable(Resources resources) {

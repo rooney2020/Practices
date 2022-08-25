@@ -12,7 +12,7 @@ import com.tsdl.practices.base.BaseActivity;
 import com.tsdl.practices.databinding.ActivityCalculatorBinding;
 import com.tsdl.practices.exception.CalculateException;
 import com.tsdl.practices.model.Calculator;
-import com.tsdl.practices.util.Constants;
+import com.tsdl.common.util.Constants;
 
 public class CalculatorActivity extends BaseActivity implements View.OnClickListener {
 

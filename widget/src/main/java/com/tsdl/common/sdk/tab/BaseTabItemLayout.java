@@ -235,12 +235,12 @@ public class BaseTabItemLayout extends BaseView implements ITabItem {
      */
     private boolean mScrollEnable = false;
     /**
-     * if this is not null show drawable background
+     * if this is not null show layout background
      */
     private Drawable mBgDrawable;
 
     /**
-     * if this is not null show drawable background
+     * if this is not null show layout background
      */
     private Drawable mItemDrawable;
 
@@ -250,7 +250,7 @@ public class BaseTabItemLayout extends BaseView implements ITabItem {
     private boolean mDefaultBitmap;
 
     /**
-     * if this is not null show checked drawable color
+     * if this is not null show checked layout color
      */
     private Drawable checkDrawable;
     private Drawable redPointDrawable;

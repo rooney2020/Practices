@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="common_icon_color">#000000</color>
+    <color name="common_icon_color_gary">#2D2D2D</color>
     <color name="common_color_gary">#EEEEEEEE</color>
 </resources>

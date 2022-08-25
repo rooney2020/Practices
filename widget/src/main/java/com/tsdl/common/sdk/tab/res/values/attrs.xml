@@ -28,7 +28,7 @@
 
 
     <declare-styleable name="BaseTabItemLayout">
-        <!--set view check item drawable-->
+        <!--set view check item layout-->
         <attr name="checkedItemColor" format="reference" />
         <attr name="topCheckDrawable" format="reference" />
         <attr name="tabItemTopBgDrawable" format="reference" />
@@ -39,7 +39,7 @@
         <attr name="tabItemTopBackgroundTint" format="reference" />
         <attr name="tabItemCheckTint" format="reference" />
         <attr name="tabItemVerticalItemDrawable" format="reference" />
-        <!--set view item drawable -->
+        <!--set view item layout -->
         <attr name="tabItemItemDrawable" format="reference" />
         <!--item radius-->
         <attr name="tabItemRadius" format="dimension|reference" />
@@ -77,7 +77,7 @@
         <!--set view can scroll -->
         <attr name="tabItemScrollEnable" format="boolean" />
 
-        <!--set view bg drawable -->
+        <!--set view bg layout -->
         <attr name="tabItemBgDrawable" format="reference" />
 
         <!--set view mode horizontal or vertical -->

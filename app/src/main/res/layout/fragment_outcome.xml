@@ -15,7 +15,7 @@
         <com.tsdl.common.sdk.base.BaseLinearLayout
             android:id="@+id/bill_top"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/bill_top_height_250"
+            android:layout_height="@dimen/bill_top_height_260"
             android:background="#FF9800"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:singleLine="true"
                     android:text="餐饮"
                     android:textColor="@color/white"
                     android:textSize="22sp" />
@@ -48,35 +49,103 @@
                     android:hint="0.00"
                     android:inputType="numberDecimal"
                     android:maxLength="10"
+                    android:singleLine="true"
                     android:textColor="@color/white"
                     android:textColorHint="@color/gary"
                     android:textSize="28sp" />
 
             </com.tsdl.common.sdk.base.BaseLinearLayout>
 
-            <com.tsdl.common.sdk.base.BaseLinearLayout
+            <com.tsdl.common.sdk.base.BaseConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:gravity="center_vertical">
+
+                <com.tsdl.common.sdk.base.BaseImageView
+                    android:id="@+id/icon_calendar"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_25"
+                    android:src="@drawable/icon_calendar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.tsdl.common.sdk.base.BaseTextView
+                    android:id="@+id/tv_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="08.24"
+                    android:textColor="@color/gary"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_calendar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.tsdl.common.sdk.base.BaseView
+                    android:id="@+id/icon_separator"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_18"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:background="@color/gary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_calendar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.tsdl.common.sdk.base.BaseImageView
+                    android:id="@+id/icon_write"
+                    android:layout_width="@dimen/dimen_18"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:src="@drawable/icon_write"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_separator"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/et_detail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_20"
                     android:background="@null"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
-                    android:gravity="end|center_vertical"
                     android:hint="写点啥备注下"
+                    android:maxWidth="@dimen/dimen_350"
+                    android:singleLine="true"
                     android:textColor="@color/white"
                     android:textColorHint="@color/gary"
-                    android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="@id/bill_top" />
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_write"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            </com.tsdl.common.sdk.base.BaseLinearLayout>
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg_ok"
+                    android:text="@string/btn_ok"
+                    android:textColor="@color/gary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </com.tsdl.common.sdk.base.BaseConstraintLayout>
 
         </com.tsdl.common.sdk.base.BaseLinearLayout>
+
+        <com.tsdl.common.sdk.grid.BaseGridView
+            android:id="@+id/bill_type_grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:gravity="center"
+            android:numColumns="5"
+            android:verticalSpacing="@dimen/margin_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bill_top" />
 
     </com.tsdl.common.sdk.base.BaseConstraintLayout>
 </layout>

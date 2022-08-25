@@ -41,6 +41,7 @@
 
 
     <string name="btn_skin">切换皮肤</string>
+    <string name="btn_ok">OK</string>
     <string name="btn_dialog">Dialog</string>
     <string name="toast_title">警告</string>
     <string name="toast_content">请开启悬浮窗权限</string>

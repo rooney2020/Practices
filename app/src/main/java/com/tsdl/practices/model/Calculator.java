@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 import com.tsdl.common.util.LogUtils;
 import com.tsdl.practices.exception.CalculateException;
-import com.tsdl.practices.util.Constants;
+import com.tsdl.common.util.Constants;
 
 import java.util.ArrayList;
 import java.util.List;

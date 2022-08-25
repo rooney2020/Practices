@@ -4,6 +4,7 @@ plugins {
 
 def srcDirs = [
         'com/tsdl/common/sdk/base',
+        'com/tsdl/common/sdk/grid',
         'com/tsdl/common/sdk/tab',
         'com/tsdl/common/sdk/scroll',
         'com/tsdl/common/sdk/sound',

@@ -7,7 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gary">#EEEEEEEE</color>
+    <color name="gary">#DDDDDDDD</color>
     <color name="light_gary">#44888888</color>
     <color name="transparent">#00000000</color>
 
@@ -16,6 +16,7 @@
     <color name="icon_other">#626262</color>
     <color name="icon_other_income">#999999</color>
     <color name="icon_traffic">#969696</color>
+    <color name="btn_bg_ok">#FBB448</color>
 
     <color name="bg_income_start">#D4F8DA</color>
     <color name="bg_income_end">#FFFFFF</color>

@@ -6,7 +6,7 @@ import android.view.Gravity;
 import androidx.annotation.NonNull;
 
 import com.tsdl.practices.enums.CardColor;
-import com.tsdl.practices.util.Constants;
+import com.tsdl.common.util.Constants;
 
 public class Card extends androidx.appcompat.widget.AppCompatTextView {
 

@@ -23,18 +23,18 @@ public class TabLayoutActivity extends AppCompatActivity {
     private void initView() {
         String tabItemName = "tab";
         int i = 0;
-//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.drawable.ic_Baset_setting_1,
-//                com.tsdl.common.sdk.R.drawable.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
-//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.drawable.ic_Baset_setting_1,
-//                com.tsdl.common.sdk.R.drawable.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
-//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.drawable.ic_Baset_setting_1,
-//                com.tsdl.common.sdk.R.drawable.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
-//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.drawable.ic_Baset_setting_1,
-//                com.tsdl.common.sdk.R.drawable.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
-//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.drawable.ic_Baset_setting_1,
-//                com.tsdl.common.sdk.R.drawable.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
-//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.drawable.ic_Baset_setting_1,
-//                com.tsdl.common.sdk.R.drawable.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
+//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.layout.ic_Baset_setting_1,
+//                com.tsdl.common.sdk.R.layout.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
+//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.layout.ic_Baset_setting_1,
+//                com.tsdl.common.sdk.R.layout.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
+//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.layout.ic_Baset_setting_1,
+//                com.tsdl.common.sdk.R.layout.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
+//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.layout.ic_Baset_setting_1,
+//                com.tsdl.common.sdk.R.layout.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
+//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.layout.ic_Baset_setting_1,
+//                com.tsdl.common.sdk.R.layout.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
+//        mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), com.tsdl.common.sdk.R.layout.ic_Baset_setting_1,
+//                com.tsdl.common.sdk.R.layout.ic_Baset_setting_2, BaseTabItem.ITEMIMG));
 
 
         mBinding.itemVertical.addItem(new BaseTabItem(tabItemName + (++i), BaseTabItem.ITEMSTRING));

@@ -5,7 +5,7 @@
     <dimen name="bill_title">16sp</dimen>
     <dimen name="page_height">40dp</dimen>
     <dimen name="bill_top_height">300px</dimen>
-    <dimen name="bill_top_height_250">250px</dimen>
+    <dimen name="bill_top_height_260">260px</dimen>
     <dimen name="bill_top_height_180">180px</dimen>
     <dimen name="btn_back_height">60px</dimen>
     <dimen name="bill_icon_height">120px</dimen>

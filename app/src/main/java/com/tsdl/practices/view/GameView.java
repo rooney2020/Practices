@@ -18,11 +18,9 @@ import android.view.animation.ScaleAnimation;
 import android.widget.FrameLayout;
 import android.widget.GridLayout;
 
-import androidx.annotation.RequiresApi;
-
 import com.tsdl.practices.R;
 import com.tsdl.practices.model.Card;
-import com.tsdl.practices.util.Constants;
+import com.tsdl.common.util.Constants;
 
 import java.util.ArrayList;
 import java.util.List;

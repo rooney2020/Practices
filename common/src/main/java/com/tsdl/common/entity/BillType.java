@@ -1,8 +1,8 @@
-package com.tsdl.practices.model;
+package com.tsdl.common.entity;
 
 import android.content.ContentValues;
 
-import com.tsdl.practices.util.Constants;
+import com.tsdl.common.util.Constants;
 
 public class BillType {
 
