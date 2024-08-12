@@ -29,6 +29,7 @@
     <string name="activity_music">Music</string>
     <string name="activity_sms">短信接收</string>
     <string name="activity_tab_layout">TabLayout</string>
+    <string name="activity_web_config">食谱系统</string>
 
     <string name="game_start">Start</string>
     <string name="game_restart">Restart</string>
@@ -85,4 +86,26 @@
     <string name="type_other_income">其他收入</string>
     <string name="type_social_security">社保金</string>
     <string name="type_public_reserve_funds">公积金</string>
+
+    <!--  食谱  -->
+    <string name="text_login">登录</string>
+    <string name="text_register">注册</string>
+    <string name="text_account">账号</string>
+    <string name="text_pwd">密码</string>
+    <string name="text_captcha">验证码</string>
+    <string name="text_captcha_refresh">刷新验证码</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_search">查询</string>
+    <string name="text_add">新增</string>
+    <string name="text_info">详情</string>
+    <string name="text_del">删除</string>
+    <string name="text_keyword">关键字</string>
+    <string name="text_type">类别</string>
+    <string name="text_required">必选食材</string>
+    <string name="text_selected">可选食材</string>
+    <string name="text_label">标签</string>
+    <string name="text_all_match">全部匹配</string>
+
+    <string name="hint_address">请输入IP地址</string>
 </resources>

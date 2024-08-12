@@ -2,11 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tsdl.practices">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".PracticesApplication"
@@ -15,7 +20,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity
+            android:name=".activity.DishActivity"
+            android:exported="false"
+            android:process=":remote"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false"
+            android:process=":remote"/>
+        <activity
+            android:name=".activity.WebConfigActivity"
+            android:exported="false"
+            android:process=":remote"/>
+
         <activity
             android:name=".activity.TabLayoutActivity"
             android:exported="false"
